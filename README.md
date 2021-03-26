@@ -4,6 +4,20 @@
 
 Use EMMA SDK to register and gather information about installations, sessions, communications, and many other events.
 
+### Add it to your project
+
+```bash
+yarn add emma-react-native-sdk
+```
+
+or
+
+```bash
+npm install emma-react-native-sdk
+```
+
+### Use it from your React Native application
+
 ```javascript
 import React, { Component } from 'react';
 import EmmaSdk from 'emma-react-native-sdk';
@@ -25,6 +39,8 @@ EmmaSdk.startSession(
   }
 );
 ```
+
+Read the example application source code for further information and useful tips. Also, TypeScript types will guide you through the implementation, with SDK's methods and their params.
 
 ## Example
 
