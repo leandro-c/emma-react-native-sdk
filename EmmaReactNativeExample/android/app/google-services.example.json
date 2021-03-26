@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "12345",
+    "project_id": "emma-react-native-example",
+    "storage_bucket": "emma-react-native-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:99999999999:android:ffeeddccbbaa9988776655",
+        "android_client_info": {
+          "package_name": "com.emmareactnativeexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "99999999999-example.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "Example"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "99999999999-example.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

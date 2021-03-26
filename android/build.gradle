@@ -1,0 +1,48 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+
+def getExtOrDefault(prop, fallback) {
+    return rootProject.ext.has(prop) ? rootProject.ext.get(prop) : fallback
+}
+    
+buildscript {
+    ext.defaultKotlinVersion = '1.4.21'
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://repo.emma.io/emma' }
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.ext.has('kotlinVersion') ? rootProject.ext.kotlinVersion : defaultKotlinVersion}"
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://repo.emma.io/emma' }
+    }
+}
+
+android {
+    compileSdkVersion getExtOrDefault('compileSdkVersion', 29)
+    buildToolsVersion getExtOrDefault('buildToolsVersion', '29.0.3')
+    defaultConfig {
+        minSdkVersion getExtOrDefault('minSdkVersion', 16)
+        targetSdkVersion getExtOrDefault('targetSdkVersion', 29)
+        versionCode 1
+        versionName "1.0"
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getExtOrDefault('kotlinVersion', defaultKotlinVersion)}"
+    implementation "com.facebook.react:react-native:${getExtOrDefault('reactNativeVersion', '+')}"
+    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.9.+')}"
+}

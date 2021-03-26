@@ -1,0 +1,74 @@
+{
+  "name": "emma-react-native-sdk",
+  "version": "1.0.0",
+  "homepage": "https://emma.io",
+  "description": "React Native EMMA SDK libs and examples",
+  "author": "EMMA / Ignacio Lago",
+  "license": "Apache-2.0",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "emma"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/EMMADevelopment/emma-react-native-sdk.git"
+  },
+  "scripts": {
+    "example:android": "cd example; react-native run-android; cd ..",
+    "example:ios": "cd example; react-native run-ios; cd ..",
+    "example:start": "cd example; react-native start; cd ..",
+    "build": "rimraf dist/; tsc --build tsconfig.json",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
+  },
+  "dependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/runtime": "^7.8.4",
+    "@react-native-community/eslint-config": "^1.1.0",
+    "@types/jest": "^26.0.20",
+    "@types/react": "^16",
+    "@types/react-native": "^0.63.51",
+    "@types/react-test-renderer": "^17.0.1",
+    "babel-jest": "^25.1.0",
+    "eslint": "^6.5.1",
+    "husky": "^5.2.0",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.5.4",
+    "metro-react-native-babel-preset": "^0.59.0",
+    "react-test-renderer": "16.13.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.2.3"
+  },
+  "resolutions": {
+    "@types/react": "^16"
+  },
+  "jest": {
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "lint-staged": {
+    "src/**/*.ts": [
+      "npm run build"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
