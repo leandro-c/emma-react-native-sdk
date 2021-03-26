@@ -33,7 +33,10 @@ open class EmmaReactNative: NSObject {
             return
         }
         
-        EMMA.startSession(with: configuration)
+        DispatchQueue.main.async {
+            EMMA.startSession(with: configuration)
+        }
+        
         resolve(NSNull())
     }
     
@@ -83,8 +86,8 @@ open class EmmaReactNative: NSObject {
                     resolver resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
-        let token = requestMap["token"] as? String
-        let attributes = requestMap["attributes"] as? Dictionary<String, Any>
+        let token = requestMap["eventToken"] as? String
+        let attributes = requestMap["eventAttributes"] as? Dictionary<String, Any>
         guard Utils.isValidField(token) else {
             let error = NSError(domain: Error.invalidToken, code: 0, userInfo: nil)
             reject(String(error.code), error.domain, error)
@@ -317,7 +320,9 @@ open class EmmaReactNative: NSObject {
         if let currencyCode = currencyCode {
             EMMA.setCurrencyCode(currencyCode: currencyCode)
         }
-
+        
+        //Fix: Added temporaly serCustomerId until fix the bug
+        EMMA.setCustomerId(customerId: customerId!)
         EMMA.startOrder(orderId: orderId!, andCustomer: customerId!, withTotalPrice: totalPrice!, withExtras: extras, assignCoupon: coupon)
         resolve(nil)
     }
@@ -344,7 +349,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func trackOrder(resolver resolve: RCTPromiseResolveBlock,
+    func trackOrder(_ resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
         EMMA.trackOrder()
