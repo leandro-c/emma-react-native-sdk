@@ -51,6 +51,7 @@ const App = () => {
   const [deeplink, setDeeplink] = useState<string | null>(null);
   const [hasOrder, setHasOrder] = useState<boolean>(false);
   const [hasProducts, setHasProducts] = useState<boolean>(false);
+  const [trackedOrder, setTrackedOrder] = useState<boolean>(false);
 
   // Tweak colors
   const isDarkMode = useColorScheme() === 'dark';
@@ -209,8 +210,10 @@ const App = () => {
                   currencyCode: 'EUR',
                 });
                 setHasOrder(true);
+                setTrackedOrder(false);
               }}
               title="Start order"
+              disabled={trackedOrder}
             />
             <Button
               onPress={() => {
@@ -230,6 +233,7 @@ const App = () => {
               onPress={() => {
                 EmmaSdk.trackOrder();
                 setHasOrder(false);
+                setTrackedOrder(true);
               }}
               title="Track order"
               disabled={!hasOrder || !hasProducts}
@@ -237,11 +241,10 @@ const App = () => {
             <Button
               onPress={() => {
                 EmmaSdk.cancelOrder('EMMA');
-                setHasOrder(false);
-                setHasProducts(false);
+                setTrackedOrder(false);
               }}
               title="Cancel order"
-              disabled={!hasOrder}
+              disabled={!trackedOrder}
             />
           </View>
           <NativeAdView nativeAds={nativeAds} />
