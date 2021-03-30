@@ -7,51 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* EmmaReactNativeExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* EmmaReactNativeExampleTests.m */; };
+		1193CE3E261236BB0069E33F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193CDA7261232C90069E33F /* AppDelegate.swift */; };
+		1193CE4E261237160069E33F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1193CDB0261232CB0069E33F /* Assets.xcassets */; };
+		1193CE582612379C0069E33F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1193CE572612379C0069E33F /* LaunchScreen.storyboard */; };
+		1193CE8C26123DAB0069E33F /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193CE8B26123DAB0069E33F /* NotificationService.swift */; };
+		1193CE9026123DAB0069E33F /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1193CE8926123DAB0069E33F /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		21F8981F52FFCD0841D03BE7 /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A957EA08F61ECC1E7BA6D19 /* libPods-NotificationService.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		A50E1AB525DCED319B54CED3 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12A1D84A3FFCFDB6857E453D /* libPods-EmmaReactNativeExample.a */; };
-		C66D1731F0734394FADF1810 /* libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8FB234BB5A5EAAE7F31F7B0A /* libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a */; };
+		88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */; };
+		A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		00E356F41AD99517003FC87E /* PBXContainerItemProxy */ = {
+		1193CE8E26123DAB0069E33F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = EmmaReactNativeExample;
+			remoteGlobalIDString = 1193CE8826123DAB0069E33F;
+			remoteInfo = NotificationService;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		1193CE9126123DAB0069E33F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1193CE9026123DAB0069E33F /* NotificationService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* EmmaReactNativeExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmmaReactNativeExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* EmmaReactNativeExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmmaReactNativeExampleTests.m; sourceTree = "<group>"; };
-		00E97033DA32126034D8E518 /* Pods-EmmaReactNativeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.release.xcconfig"; sourceTree = "<group>"; };
-		12A1D84A3FFCFDB6857E453D /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193CDA7261232C90069E33F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1193CDB0261232CB0069E33F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1193CDB5261232CB0069E33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1193CE0D261233490069E33F /* EmmaReactNativeExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmmaReactNativeExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		1193CE38261236990069E33F /* EmmaReactNativeExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmmaReactNativeExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193CE572612379C0069E33F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1193CE8926123DAB0069E33F /* NotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		1193CE8B26123DAB0069E33F /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		1193CE8D26123DAB0069E33F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* EmmaReactNativeExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmmaReactNativeExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = EmmaReactNativeExample/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = EmmaReactNativeExample/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EmmaReactNativeExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EmmaReactNativeExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EmmaReactNativeExample/main.m; sourceTree = "<group>"; };
-		7A60BF9A5EA72E8A2B1B3172 /* Pods-EmmaReactNativeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.debug.xcconfig"; sourceTree = "<group>"; };
-		8113A5B4B92F6B3A976E7B1F /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EmmaReactNativeExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8FB234BB5A5EAAE7F31F7B0A /* libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		9A957EA08F61ECC1E7BA6D19 /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		F1AE844F42B5EB88574260EF /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		00E356EB1AD99517003FC87E /* Frameworks */ = {
+		1193CE2D261236990069E33F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C66D1731F0734394FADF1810 /* libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a in Frameworks */,
+				A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1193CE8626123DAB0069E33F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21F8981F52FFCD0841D03BE7 /* libPods-NotificationService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,28 +95,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A50E1AB525DCED319B54CED3 /* libPods-EmmaReactNativeExample.a in Frameworks */,
+				88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* EmmaReactNativeExampleTests */ = {
+		1193CDA6261232C90069E33F /* EmmaReactNativeExampleSwift */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* EmmaReactNativeExampleTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
+				1193CE572612379C0069E33F /* LaunchScreen.storyboard */,
+				1193CDA7261232C90069E33F /* AppDelegate.swift */,
+				1193CDB0261232CB0069E33F /* Assets.xcassets */,
+				1193CDB5261232CB0069E33F /* Info.plist */,
+				1193CE0D261233490069E33F /* EmmaReactNativeExampleSwift-Bridging-Header.h */,
 			);
-			path = EmmaReactNativeExampleTests;
+			path = EmmaReactNativeExampleSwift;
 			sourceTree = "<group>";
 		};
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
+		1193CE8A26123DAB0069E33F /* NotificationService */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
+				1193CE8B26123DAB0069E33F /* NotificationService.swift */,
+				1193CE8D26123DAB0069E33F /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = NotificationService;
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* EmmaReactNativeExample */ = {
@@ -100,22 +140,11 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				12A1D84A3FFCFDB6857E453D /* libPods-EmmaReactNativeExample.a */,
-				8FB234BB5A5EAAE7F31F7B0A /* libPods-EmmaReactNativeExample-EmmaReactNativeExampleTests.a */,
+				FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */,
+				8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */,
+				9A957EA08F61ECC1E7BA6D19 /* libPods-NotificationService.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		48A888E9FB0D0E01DE8899BB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7A60BF9A5EA72E8A2B1B3172 /* Pods-EmmaReactNativeExample.debug.xcconfig */,
-				00E97033DA32126034D8E518 /* Pods-EmmaReactNativeExample.release.xcconfig */,
-				8113A5B4B92F6B3A976E7B1F /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.debug.xcconfig */,
-				F1AE844F42B5EB88574260EF /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -128,12 +157,13 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				1193CDA6261232C90069E33F /* EmmaReactNativeExampleSwift */,
 				13B07FAE1A68108700A75B9A /* EmmaReactNativeExample */,
+				1193CE8A26123DAB0069E33F /* NotificationService */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* EmmaReactNativeExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				48A888E9FB0D0E01DE8899BB /* Pods */,
+				94E7A2A7015DEDEA4180351A /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -144,51 +174,86 @@
 			isa = PBXGroup;
 			children = (
 				13B07F961A680F5B00A75B9A /* EmmaReactNativeExample.app */,
-				00E356EE1AD99517003FC87E /* EmmaReactNativeExampleTests.xctest */,
+				1193CE38261236990069E33F /* EmmaReactNativeExampleSwift.app */,
+				1193CE8926123DAB0069E33F /* NotificationService.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		94E7A2A7015DEDEA4180351A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */,
+				6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */,
+				A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */,
+				CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */,
+				94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */,
+				ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* EmmaReactNativeExampleTests */ = {
+		1193CE27261236990069E33F /* EmmaReactNativeExampleSwift */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EmmaReactNativeExampleTests" */;
+			buildConfigurationList = 1193CE35261236990069E33F /* Build configuration list for PBXNativeTarget "EmmaReactNativeExampleSwift" */;
 			buildPhases = (
-				03075D1B7CD50FE8142B80FC /* [CP] Check Pods Manifest.lock */,
-				00E356EA1AD99517003FC87E /* Sources */,
-				00E356EB1AD99517003FC87E /* Frameworks */,
-				00E356EC1AD99517003FC87E /* Resources */,
-				78D108CD4ADC56C3292A53C4 /* [CP] Embed Pods Frameworks */,
-				52F5991D7EC5332F5B9991C7 /* [CP] Copy Pods Resources */,
+				0E9BC3124C312DD5708FD5EE /* [CP] Check Pods Manifest.lock */,
+				1193CE29261236990069E33F /* Start Packager */,
+				1193CE2A261236990069E33F /* Sources */,
+				1193CE2D261236990069E33F /* Frameworks */,
+				1193CE2F261236990069E33F /* Resources */,
+				1193CE32261236990069E33F /* Bundle React Native code and images */,
+				D3DC0F191B8457F8834387FC /* [CP] Embed Pods Frameworks */,
+				5F6ECF3D0BF2459851C11776 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = EmmaReactNativeExampleTests;
-			productName = EmmaReactNativeExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* EmmaReactNativeExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = EmmaReactNativeExampleSwift;
+			productName = EmmaReactNativeExample;
+			productReference = 1193CE38261236990069E33F /* EmmaReactNativeExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1193CE8826123DAB0069E33F /* NotificationService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1193CE9426123DAB0069E33F /* Build configuration list for PBXNativeTarget "NotificationService" */;
+			buildPhases = (
+				77F091C4BB17382A7AFDC8BB /* [CP] Check Pods Manifest.lock */,
+				1193CE8526123DAB0069E33F /* Sources */,
+				1193CE8626123DAB0069E33F /* Frameworks */,
+				1193CE8726123DAB0069E33F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationService;
+			productName = NotificationService;
+			productReference = 1193CE8926123DAB0069E33F /* NotificationService.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 		13B07F861A680F5B00A75B9A /* EmmaReactNativeExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EmmaReactNativeExample" */;
 			buildPhases = (
-				D9F27AD1D23BC80DEE432E6A /* [CP] Check Pods Manifest.lock */,
+				F7EE4EEBA2E6C339A6F66135 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				13E7B5E9A90B5DB9F7D784B1 /* [CP] Embed Pods Frameworks */,
-				CDD1290E616ABD54D8D0A64A /* [CP] Copy Pods Resources */,
+				1193CE9126123DAB0069E33F /* Embed App Extensions */,
+				66D3D871622D2390F0F5ABA7 /* [CP] Embed Pods Frameworks */,
+				D089F8B5B78631AD4151BA0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1193CE8F26123DAB0069E33F /* PBXTargetDependency */,
 			);
 			name = EmmaReactNativeExample;
 			productName = EmmaReactNativeExample;
@@ -201,11 +266,11 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
-					00E356ED1AD99517003FC87E = {
-						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
+					1193CE8826123DAB0069E33F = {
+						CreatedOnToolsVersion = 12.4;
 					};
 					13B07F861A680F5B00A75B9A = {
 						LastSwiftMigration = 1120;
@@ -226,13 +291,23 @@
 			projectRoot = "";
 			targets = (
 				13B07F861A680F5B00A75B9A /* EmmaReactNativeExample */,
-				00E356ED1AD99517003FC87E /* EmmaReactNativeExampleTests */,
+				1193CE27261236990069E33F /* EmmaReactNativeExampleSwift */,
+				1193CE8826123DAB0069E33F /* NotificationService */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		00E356EC1AD99517003FC87E /* Resources */ = {
+		1193CE2F261236990069E33F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193CE4E261237160069E33F /* Assets.xcassets in Resources */,
+				1193CE582612379C0069E33F /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1193CE8726123DAB0069E33F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -265,7 +340,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		03075D1B7CD50FE8142B80FC /* [CP] Check Pods Manifest.lock */ = {
+		0E9BC3124C312DD5708FD5EE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -280,14 +355,64 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-EmmaReactNativeExampleSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		13E7B5E9A90B5DB9F7D784B1 /* [CP] Embed Pods Frameworks */ = {
+		1193CE29261236990069E33F /* Start Packager */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Start Packager";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1193CE32261236990069E33F /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
+		5F6ECF3D0BF2459851C11776 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D3D871622D2390F0F5ABA7 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -304,41 +429,29 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		52F5991D7EC5332F5B9991C7 /* [CP] Copy Pods Resources */ = {
+		77F091C4BB17382A7AFDC8BB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		78D108CD4ADC56C3292A53C4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests/Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDD1290E616ABD54D8D0A64A /* [CP] Copy Pods Resources */ = {
+		D089F8B5B78631AD4151BA0A /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -355,7 +468,24 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D9F27AD1D23BC80DEE432E6A /* [CP] Check Pods Manifest.lock */ = {
+		D3DC0F191B8457F8834387FC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7EE4EEBA2E6C339A6F66135 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -399,11 +529,19 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		00E356EA1AD99517003FC87E /* Sources */ = {
+		1193CE2A261236990069E33F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* EmmaReactNativeExampleTests.m in Sources */,
+				1193CE3E261236BB0069E33F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1193CE8526123DAB0069E33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1193CE8C26123DAB0069E33F /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,74 +557,145 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
+		1193CE8F26123DAB0069E33F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* EmmaReactNativeExample */;
-			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
+			target = 1193CE8826123DAB0069E33F /* NotificationService */;
+			targetProxy = 1193CE8E26123DAB0069E33F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		00E356F61AD99517003FC87E /* Debug */ = {
+		1193CE36261236990069E33F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8113A5B4B92F6B3A976E7B1F /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = EmmaReactNativeExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmmaReactNativeExample.app/EmmaReactNativeExample";
-			};
-			name = Debug;
-		};
-		00E356F71AD99517003FC87E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F1AE844F42B5EB88574260EF /* Pods-EmmaReactNativeExample-EmmaReactNativeExampleTests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = EmmaReactNativeExampleTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-lc++",
-					"$(inherited)",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmmaReactNativeExample.app/EmmaReactNativeExample";
-			};
-			name = Release;
-		};
-		13B07F941A680F5B00A75B9A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A60BF9A5EA72E8A2B1B3172 /* Pods-EmmaReactNativeExample.debug.xcconfig */;
+			baseConfigurationReference = A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = EmmaReactNativeExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/emma-react-native-sdk/emma_react_native_sdk.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/FlipperKit/FlipperKit.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\" -Xcc -DFB_SONARKIT_ENABLED=1 -D DEBUG";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/emma-react-native-sdk/emma_react_native_sdk.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/FlipperKit/FlipperKit.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\" -Xcc -DFB_SONARKIT_ENABLED=1 -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "$(inherited) \"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit\" \"${PODS_CONFIGURATION_BUILD_DIR}/emma-react-native-sdk\"";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Debug;
+		};
+		1193CE37261236990069E33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = EmmaReactNativeExampleSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/YogaKit/YogaKit.modulemap\" -Xcc -fmodule-map-file=\"${PODS_CONFIGURATION_BUILD_DIR}/emma-react-native-sdk/emma_react_native_sdk.modulemap\" -Xcc -fmodule-map-file=\"${PODS_ROOT}/Headers/Public/yoga/Yoga.modulemap\"";
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExampleSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/$(SWIFT_MODULE_NAME)/$(SWIFT_MODULE_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+			};
+			name = Release;
+		};
+		1193CE9226123DAB0069E33F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1193CE9326123DAB0069E33F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = NotificationService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample.NotificationService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		13B07F941A680F5B00A75B9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EmmaReactNativeExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -496,7 +705,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample;
 				PRODUCT_NAME = EmmaReactNativeExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -506,12 +715,14 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 00E97033DA32126034D8E518 /* Pods-EmmaReactNativeExample.release.xcconfig */;
+			baseConfigurationReference = 6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = EmmaReactNativeExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -521,7 +732,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample;
 				PRODUCT_NAME = EmmaReactNativeExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -654,11 +865,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "EmmaReactNativeExampleTests" */ = {
+		1193CE35261236990069E33F /* Build configuration list for PBXNativeTarget "EmmaReactNativeExampleSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				00E356F61AD99517003FC87E /* Debug */,
-				00E356F71AD99517003FC87E /* Release */,
+				1193CE36261236990069E33F /* Debug */,
+				1193CE37261236990069E33F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1193CE9426123DAB0069E33F /* Build configuration list for PBXNativeTarget "NotificationService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1193CE9226123DAB0069E33F /* Debug */,
+				1193CE9326123DAB0069E33F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

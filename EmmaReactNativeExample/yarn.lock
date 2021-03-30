@@ -2530,8 +2530,10 @@ emittery@^0.7.1:
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.7.2.tgz#25595908e13af0f5674ab419396e2fb394cdfa82"
   integrity sha512-A8OG5SR/ij3SsJdWDJdkkSYUjQdCUx6APQXem0SaEePBSRg4eymGYwBkKo1Y6DU+af/Jn2dBQqDBvjnr9Vi8nQ==
 
-"emma-react-native-sdk@file:..":
+emma-react-native-sdk@^1.0.0:
   version "1.0.0"
+  resolved "https://registry.yarnpkg.com/emma-react-native-sdk/-/emma-react-native-sdk-1.0.0.tgz#ad62966a855488c200d8445b3e0d08633c76a7b5"
+  integrity sha512-IAr+UMGErctDiqm5yG5GJdskOuJ5xqYviS5+Hr6XrZPYMXAOp5QwZklO0e80LKnWz1FxsGf/7hhQiKCSKFV38w==
   dependencies:
     react "16.13.1"
     react-native "0.63.4"

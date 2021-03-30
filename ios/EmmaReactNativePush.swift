@@ -13,12 +13,6 @@ import EMMA_iOS
 public class EmmaReactNativePush: NSObject {
     public static let shared = EmmaReactNativePush()
     
-    public weak var pushDelegate: UNUserNotificationCenterDelegate? {
-        didSet {
-            UNUserNotificationCenter.current().delegate = pushDelegate
-        }
-    }
-    
     var pushStarted = false
     
     private override init() {
@@ -28,7 +22,7 @@ public class EmmaReactNativePush: NSObject {
     //MARK: Internal methods
     internal func startPush() {
         if #available(iOS 10, *) {
-            if let delegate = pushDelegate {
+            if let delegate = UNUserNotificationCenter.current().delegate {
                 EMMA.setPushNotificationsDelegate(delegate: delegate)
             }
         }
@@ -41,6 +35,11 @@ public class EmmaReactNativePush: NSObject {
     }
     
     //MARK: Public methods
+    @available(iOS 10.0, *)
+    public func setPushNotificationsDelegate(_ delegate: UNUserNotificationCenterDelegate) {
+        UNUserNotificationCenter.current().delegate = delegate
+    }
+    
     public func registerToken(_ token: Data) {
         if (pushStarted) {
             EMMA.registerToken(token)

@@ -4,6 +4,11 @@
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
 
+// EMMA imports
+#import <React/RCTLinkingManager.h>
+@import emma_react_native_sdk;
+//
+
 #ifdef FB_SONARKIT_ENABLED
 #import <FlipperKit/FlipperClient.h>
 #import <FlipperKitLayoutPlugin/FlipperKitLayoutPlugin.h>
@@ -12,10 +17,6 @@
 #import <SKIOSNetworkPlugin/SKIOSNetworkAdapter.h>
 #import <FlipperKitReactPlugin/FlipperKitReactPlugin.h>
 
-// EMMA imports
-#import <React/RCTLinkingManager.h>
-@import emma_react_native_sdk;
-//
 
 static void InitializeFlipper(UIApplication *application) {
   FlipperClient *client = [FlipperClient sharedClient];
@@ -56,7 +57,7 @@ static void InitializeFlipper(UIApplication *application) {
   
   // Pass push delegate to EMMA bridge
   if (@available(iOS 10.0, *)) {
-    [[EmmaReactNativePush shared] setPushDelegate:self];
+    [[EmmaReactNativePush shared] setPushNotificationsDelegate:self];
   }
   
   return YES;
@@ -90,12 +91,15 @@ static void InitializeFlipper(UIApplication *application) {
 
 //MARK: EMMA - Deeplinking
 - (void)openURL:(NSURL*)url options:(NSDictionary<NSString *, id> *)options completionHandler:(void (^ __nullable)(BOOL success))completion {
+  [EmmaReactNativeLinking handleLinkWithUrl:url];
   completion([RCTLinkingManager application:[UIApplication sharedApplication] openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]);
 }
 
 //MARK: EMMA - Universal links
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
-  
+  if (userActivity.webpageURL) {
+    [EmmaReactNativeLinking handleLinkWithUrl:userActivity.webpageURL];
+  }
   return [RCTLinkingManager application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
