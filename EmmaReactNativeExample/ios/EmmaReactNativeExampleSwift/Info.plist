@@ -56,5 +56,13 @@
 			</dict>
 		</dict>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) needs location access for EMMA platform</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) needs location access for EMMA platform</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>$(PRODUCT_NAME) needs location access for EMMA platform</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Uso del indentificador para redes de terceros</string>
 </dict>
 </plist>
