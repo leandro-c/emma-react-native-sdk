@@ -38,3 +38,6 @@ target 'NotificationService' do
   pod 'eMMa', '~> 4.9.0' 
 end
 
+target 'NotificationServiceSwift' do
+  pod 'eMMa', '~> 4.9.0'
+end
