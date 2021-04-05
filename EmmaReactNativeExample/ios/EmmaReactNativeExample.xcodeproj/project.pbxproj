@@ -24,6 +24,20 @@
 		A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		1126D7F72614D2CC00599AB7 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			fileType = pattern.proxy;
+			inputFiles = (
+			);
+			isEditable = 1;
+			outputFiles = (
+			);
+			script = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXContainerItemProxy section */
 		1193611626138404009D591A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -67,6 +81,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1126D7BE26145B5700599AB7 /* EmmaReactNativeExampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmmaReactNativeExampleSwift.entitlements; sourceTree = "<group>"; };
+		1126D7E22614D20100599AB7 /* EmmaReactNativeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = EmmaReactNativeExample.entitlements; path = EmmaReactNativeExample/EmmaReactNativeExample.entitlements; sourceTree = "<group>"; };
 		119361072613838A009D591A /* NotificationServiceSwift.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceSwift.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		119361082613838B009D591A /* Info-swift.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-swift.plist"; path = "/Users/adriancarrera/Documents/devel/emma-react-native-sdk/EmmaReactNativeExample/ios/Info-swift.plist"; sourceTree = "<absolute>"; };
 		1193618F2613891C009D591A /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
@@ -140,6 +156,7 @@
 		1193CDA6261232C90069E33F /* EmmaReactNativeExampleSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1126D7BE26145B5700599AB7 /* EmmaReactNativeExampleSwift.entitlements */,
 				1193CE572612379C0069E33F /* LaunchScreen.storyboard */,
 				1193CDA7261232C90069E33F /* AppDelegate.swift */,
 				1193CDB0261232CB0069E33F /* Assets.xcassets */,
@@ -163,6 +180,7 @@
 		13B07FAE1A68108700A75B9A /* EmmaReactNativeExample */ = {
 			isa = PBXGroup;
 			children = (
+				1126D7E22614D20100599AB7 /* EmmaReactNativeExample.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -312,6 +330,7 @@
 				D089F8B5B78631AD4151BA0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
+				1126D7F72614D2CC00599AB7 /* PBXBuildRule */,
 			);
 			dependencies = (
 				1193CE8F26123DAB0069E33F /* PBXTargetDependency */,
@@ -685,7 +704,7 @@
 				DEVELOPMENT_TEAM = V9SQWVREY8;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Info-swift.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -720,7 +739,7 @@
 				DEVELOPMENT_TEAM = V9SQWVREY8;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Info-swift.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -743,6 +762,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExampleSwift/EmmaReactNativeExampleSwift.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V9SQWVREY8;
 				ENABLE_BITCODE = NO;
@@ -774,6 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExampleSwift/EmmaReactNativeExampleSwift.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = V9SQWVREY8;
 				INFOPLIST_FILE = EmmaReactNativeExampleSwift/Info.plist;
@@ -870,8 +891,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExample/EmmaReactNativeExample.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9SQWVREY8;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = EmmaReactNativeExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -884,7 +906,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExampleObjc;
 				PRODUCT_NAME = EmmaReactNativeExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -899,8 +921,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExample/EmmaReactNativeExample.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = V9SQWVREY8;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = EmmaReactNativeExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -912,7 +935,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExample;
+				PRODUCT_BUNDLE_IDENTIFIER = io.emma.example.EmmaReactNativeExampleObjc;
 				PRODUCT_NAME = EmmaReactNativeExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

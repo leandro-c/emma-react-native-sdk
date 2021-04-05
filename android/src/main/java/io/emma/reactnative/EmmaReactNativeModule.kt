@@ -2,6 +2,7 @@ package io.emma.reactnative
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
 import com.facebook.react.bridge.*
 import io.emma.android.EMMA
 import io.emma.android.enums.EMMAPushType
@@ -275,6 +276,7 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     fun startPush(pushParams: ReadableMap, promise: Promise) {
         val classToOpen = pushParams.getString("classToOpen")
         val iconResource = pushParams.getString("iconResource")
+        val color = if (pushParams.hasKey("color")) pushParams.getString("color") else null
         val defaultChannel  = Utils.getAppName(reactApplicationContext) ?: "EMMA"
         val channelName = if (pushParams.hasKey("channelName"))pushParams.getString("channelName") else defaultChannel
         val channelId = if (pushParams.hasKey("channelId")) pushParams.getString("channelId") else null
@@ -303,6 +305,16 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
 
         val pushOpt = EMMAPushOptions.Builder(clazz, foundedPushIcon)
                 .setNotificationChannelName(channelName)
+
+        if (Utils.isValidField(color)) {
+            try {
+                val colorInt: Int = Color.parseColor(color);
+                pushOpt.setNotificationColor(colorInt)
+            } catch (ex: IllegalArgumentException) {
+                promise.reject("4", Error.INVALID_HEXA_COLOR)
+                return
+            }
+        }
 
         if (channelId == null) {
             pushOpt.setNotificationChannelId(channelId)
