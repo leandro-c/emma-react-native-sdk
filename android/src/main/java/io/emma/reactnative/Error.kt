@@ -17,4 +17,5 @@ object Error {
     const val INVALID_TOTAL_PRICE = "Order totalPrice is mandatory"
     const val INVALID_PRODUCT_ID = "Product id cannot be empty"
     const val INVALID_CUSTOMER_ID = "Customer ID cannot be empty"
+    const val INVALID_HEXA_COLOR = "Color hexa code invalid"
 }

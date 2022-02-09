@@ -6,7 +6,7 @@ def getExtOrDefault(prop, fallback) {
 }
     
 buildscript {
-    ext.defaultKotlinVersion = '1.4.21'
+    ext.defaultKotlinVersion = '1.6.0'
     repositories {
         google()
         jcenter()
@@ -28,11 +28,11 @@ rootProject.allprojects {
 }
 
 android {
-    compileSdkVersion getExtOrDefault('compileSdkVersion', 29)
-    buildToolsVersion getExtOrDefault('buildToolsVersion', '29.0.3')
+    compileSdkVersion getExtOrDefault('compileSdkVersion', 31)
+    buildToolsVersion getExtOrDefault('buildToolsVersion', '30.0.3')
     defaultConfig {
         minSdkVersion getExtOrDefault('minSdkVersion', 16)
-        targetSdkVersion getExtOrDefault('targetSdkVersion', 29)
+        targetSdkVersion getExtOrDefault('targetSdkVersion', 31)
         versionCode 1
         versionName "1.0"
     }
@@ -44,5 +44,5 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getExtOrDefault('kotlinVersion', defaultKotlinVersion)}"
     implementation "com.facebook.react:react-native:${getExtOrDefault('reactNativeVersion', '+')}"
-    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.9.+')}"
+    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.10.+')}"
 }

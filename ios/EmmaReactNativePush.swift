@@ -61,4 +61,12 @@ public class EmmaReactNativePush: NSObject {
             }
         }
     }
+    
+    public func didReceiveNotification(userInfo: [AnyHashable : Any], actionIdentifier: String) {
+        if (userInfo["eMMa"] != nil) {
+            DispatchQueue.main.async {
+                EMMA.handlePush(userInfo: userInfo, actionIdentifier: actionIdentifier)
+            }
+        }
+    }
 }

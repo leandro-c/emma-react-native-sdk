@@ -14,7 +14,8 @@ def shared_pods
 
   # Enables Flipper.
   #
-  use_flipper!({ 'Flipper' => '0.74.0' })
+  use_flipper!({ 'Flipper-Folly' => '2.6.7', 'Flipper-RSocket' => '1.4.3' , 'Flipper' => '0.88.0' })
+
 end
 
 
@@ -35,9 +36,9 @@ end
   end
 
 target 'NotificationService' do
-  pod 'eMMa', '~> 4.9.0' 
+  pod 'eMMa', '~> 4.10.1' 
 end
 
 target 'NotificationServiceSwift' do
-  pod 'eMMa', '~> 4.9.0'
+  pod 'eMMa', '~> 4.10.1'
 end

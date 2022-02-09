@@ -82,7 +82,7 @@ static void InitializeFlipper(UIApplication *application) {
 }
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler  API_AVAILABLE(ios(10.0)){
-  [[EmmaReactNativePush shared] didReceiveNotificationWithUserInfo:response.notification.request.content.userInfo];
+  [[EmmaReactNativePush shared] didReceiveNotificationWithUserInfo:response.notification.request.content.userInfo actionIdentifier:response.actionIdentifier];
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler  API_AVAILABLE(ios(10.0)){
