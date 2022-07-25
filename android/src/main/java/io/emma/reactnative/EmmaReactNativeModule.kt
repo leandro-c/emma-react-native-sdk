@@ -134,13 +134,21 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
 
             override fun onSuccess(id: String?, data: Boolean) {
                 if (!data) {
-                    EMMA.getInstance().removeInAppMessageListener(this)
+                    if (batch) {
+                        EMMA.getInstance().removeBatchNativeAdListenenr(this)
+                    } else {
+                        EMMA.getInstance().removeNativeAdListener(this)
+                    }
                     promise.resolve(WritableNativeArray())
                 }
             }
 
             override fun onFailed(id: String?) {
-                EMMA.getInstance().removeInAppMessageListener(this)
+                if (batch) {
+                    EMMA.getInstance().removeBatchNativeAdListenenr(this)
+                } else {
+                    EMMA.getInstance().removeNativeAdListener(this)
+                }
                 promise.reject("0", Error.REQUEST_FAILED)
             }
 

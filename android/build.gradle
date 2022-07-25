@@ -6,15 +6,15 @@ def getExtOrDefault(prop, fallback) {
 }
     
 buildscript {
-    ext.defaultKotlinVersion = '1.6.0'
+    ext.defaultKotlinVersion = '1.6.10'
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://repo.emma.io/emma' }
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.1.2'
+        classpath 'com.android.tools.build:gradle:7.2.1'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.ext.has('kotlinVersion') ? rootProject.ext.kotlinVersion : defaultKotlinVersion}"
     }
 }
@@ -22,7 +22,7 @@ buildscript {
 rootProject.allprojects {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
         maven { url 'https://repo.emma.io/emma' }
     }
 }
@@ -44,5 +44,5 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getExtOrDefault('kotlinVersion', defaultKotlinVersion)}"
     implementation "com.facebook.react:react-native:${getExtOrDefault('reactNativeVersion', '+')}"
-    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.10.+')}"
+    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.11.+')}"
 }
