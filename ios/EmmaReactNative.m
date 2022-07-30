@@ -18,7 +18,7 @@ RCT_EXTERN_METHOD(registerUser:(NSDictionary*) registerMap resolver:(RCTPromiseR
 //MARK: Track user info
 RCT_EXTERN_METHOD(trackUserExtraInfo:(NSDictionary*) infoMap resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 
-RCT_EXTERN_METHOD(customerId:(NSString*) customerId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+RCT_EXTERN_METHOD(setCustomerId:(NSString*) customerId resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
 
 //MARK: In-App messaging
 RCT_EXTERN_METHOD(inAppMessage:(NSDictionary*) messageMap resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)

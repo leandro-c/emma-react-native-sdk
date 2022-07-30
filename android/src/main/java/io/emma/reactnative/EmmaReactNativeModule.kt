@@ -433,4 +433,10 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
         EMMA.getInstance().cancelOrder(orderId)
         promise.resolve(null)
     }
+
+    @ReactMethod
+    fun setCustomerId(customerId: String, promise: Promise) {
+        EMMA.getInstance().setCustomerId(customerId);
+        promise.resolve(null)
+    }
 }
