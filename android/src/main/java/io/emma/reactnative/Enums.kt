@@ -9,3 +9,10 @@ enum class InAppAction {
     Click,
     Impression
 }
+
+enum class PermissionStatus {
+    Granted,
+    Denied,
+    ShouldPermissionRationale,
+    Unsupported,
+}

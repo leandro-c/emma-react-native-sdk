@@ -11,6 +11,13 @@ export enum IN_APP_TYPE {
   STRIP = 'strip',
 }
 
+export enum PERMISSION_STATUS {
+    GRANTED,
+    DENIED,
+    SHOULD_PERMISSION_RATIONALE,
+    UNSUPPORTED,
+}
+
 export interface StartSessionParams {
   sessionKey: string;
   apiUrl?: string;

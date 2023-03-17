@@ -165,6 +165,7 @@ fun ReadableMap.toMap(): Map<String, Any> {
         when (getType(key)) {
             ReadableType.Number -> map[key] = getDouble(key)
             ReadableType.String -> map[key] = getString(key) ?: ""
+            else -> continue
         }
     }
     return map
@@ -188,10 +189,7 @@ fun ReadableArray.toStringArray(): Array<String> {
     val array = arrayListOf<String>()
     for (i in 0 until size()) {
         if (getType(i) == ReadableType.String) {
-            val domain = getString(i)
-            domain?.let {
-                array.add(domain)
-            }
+            array.add(getString(i))
         }
     }
     return array.toTypedArray()

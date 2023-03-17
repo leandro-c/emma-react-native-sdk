@@ -13,6 +13,7 @@ import {
   StartSessionParams,
   TrackEventParams,
   TrackUserExtraInfoParams,
+  PERMISSION_STATUS,
 } from './types/index.types';
 
 export * from './types/index.types';
@@ -89,5 +90,19 @@ export default class EmmaSdk {
     } else {
       console.error(`Unsupported platform: ${Platform.OS}`);
     }
+  }
+
+  static areNotificationsEnabled(): Promise<boolean> {
+    if (Platform.OS === 'android') {
+      return EmmaReactNative.areNotificationsEnabled();
+    }
+    return Promise.resolve(false);
+  }
+
+  static requestNotificationPermission(): Promise<PERMISSION_STATUS> {
+    if (Platform.OS === 'android') {
+      return EmmaReactNative.requestNotificationPermission();
+    }
+    return Promise.resolve(PERMISSION_STATUS.UNSUPPORTED);
   }
 }

@@ -3,10 +3,13 @@ package io.emma.reactnative
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
+import android.os.Build;
 import com.facebook.react.bridge.*
 import io.emma.android.EMMA
-import io.emma.android.enums.EMMAPushType
+import io.emma.android.enums.*
 import io.emma.android.model.*
+import io.emma.android.interfaces.EMMAPermissionInterface
+
 
 
 class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
@@ -438,5 +441,36 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     fun setCustomerId(customerId: String, promise: Promise) {
         EMMA.getInstance().setCustomerId(customerId);
         promise.resolve(null)
+    }
+
+    @ReactMethod
+    fun areNotificationsEnabled(promise: Promise) {
+        promise.resolve(EMMA.getInstance().areNotificationsEnabled())
+    }
+
+    @ReactMethod
+    fun requestNotificationPermission(promise: Promise) {
+        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+            promise.resolve(PermissionStatus.Unsupported)
+            return;
+        }
+
+        val permissionListener = object: EMMAPermissionInterface {
+            override fun onPermissionGranted(permission: String, isFirstTime: Boolean) {
+                promise.resolve(PermissionStatus.Granted)
+            }
+
+            override fun onPermissionDenied(permission: String) {
+                promise.resolve(PermissionStatus.Denied)
+            }
+
+            override fun onPermissionWaitingForAction(permission: String) { }
+
+            override fun onPermissionShouldShowRequestPermissionRationale(permission: String) {
+                promise.resolve(PermissionStatus.ShouldPermissionRationale)
+            }
+        }
+
+        EMMA.getInstance().requestNotificationPermission(permissionListener)
     }
 }

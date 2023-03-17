@@ -14,7 +14,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.2.1'
+        classpath 'com.android.tools.build:gradle:7.2.2'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${rootProject.ext.has('kotlinVersion') ? rootProject.ext.kotlinVersion : defaultKotlinVersion}"
     }
 }
@@ -28,11 +28,11 @@ rootProject.allprojects {
 }
 
 android {
-    compileSdkVersion getExtOrDefault('compileSdkVersion', 31)
-    buildToolsVersion getExtOrDefault('buildToolsVersion', '30.0.3')
+    compileSdkVersion getExtOrDefault('compileSdkVersion', 33)
+    buildToolsVersion getExtOrDefault('buildToolsVersion', '33.0.0')
     defaultConfig {
-        minSdkVersion getExtOrDefault('minSdkVersion', 16)
-        targetSdkVersion getExtOrDefault('targetSdkVersion', 31)
+        minSdkVersion getExtOrDefault('minSdkVersion', 19)
+        targetSdkVersion getExtOrDefault('targetSdkVersion', 33)
         versionCode 1
         versionName "1.0"
     }
@@ -44,5 +44,5 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getExtOrDefault('kotlinVersion', defaultKotlinVersion)}"
     implementation "com.facebook.react:react-native:${getExtOrDefault('reactNativeVersion', '+')}"
-    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.11.+')}"
+    implementation "io.emma:eMMaSDK:${getExtOrDefault('emmaSdk', '4.12.+')}"
 }
