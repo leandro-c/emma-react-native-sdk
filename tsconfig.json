@@ -2,6 +2,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "isolatedModules": true,
+    "skipLibCheck": true,
     "jsx": "react",
     "lib": ["es6"],
     "moduleResolution": "node",

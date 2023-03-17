@@ -1,5 +1,5 @@
 import { NativeModules, Platform } from 'react-native';
-import { IN_APP_TYPE, } from './types/index.types';
+import { IN_APP_TYPE, PERMISSION_STATUS, } from './types/index.types';
 export * from './types/index.types';
 const { EmmaReactNative } = NativeModules;
 export default class EmmaSdk {
@@ -73,5 +73,17 @@ export default class EmmaSdk {
         else {
             console.error(`Unsupported platform: ${Platform.OS}`);
         }
+    }
+    static areNotificationsEnabled() {
+        if (Platform.OS === 'android') {
+            return EmmaReactNative.areNotificationsEnabled();
+        }
+        return Promise.resolve(false);
+    }
+    static requestNotificationPermission() {
+        if (Platform.OS === 'android') {
+            return EmmaReactNative.requestNotificationPermission();
+        }
+        return Promise.resolve(PERMISSION_STATUS.UNSUPPORTED);
     }
 }

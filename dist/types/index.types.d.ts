@@ -9,6 +9,12 @@ export declare enum IN_APP_TYPE {
     STARTVIEW = "startview",
     STRIP = "strip"
 }
+export declare enum PERMISSION_STATUS {
+    GRANTED = 0,
+    DENIED = 1,
+    SHOULD_PERMISSION_RATIONALE = 2,
+    UNSUPPORTED = 3
+}
 export interface StartSessionParams {
     sessionKey: string;
     apiUrl?: string;

@@ -1,4 +1,4 @@
-import { AddProductParams, InAppMessageParams, LoginRegisterUserParams, NativeAd, OpenNativeAdParams, SendInAppParams, StartOrderParams, StartPushParams, StartSessionParams, TrackEventParams, TrackUserExtraInfoParams } from './types/index.types';
+import { AddProductParams, InAppMessageParams, LoginRegisterUserParams, NativeAd, OpenNativeAdParams, SendInAppParams, StartOrderParams, StartPushParams, StartSessionParams, TrackEventParams, TrackUserExtraInfoParams, PERMISSION_STATUS } from './types/index.types';
 export * from './types/index.types';
 export default class EmmaSdk {
     static startSession(startSessionParams: StartSessionParams): Promise<void>;
@@ -22,4 +22,6 @@ export default class EmmaSdk {
     static sendInAppClick(sendInAppParams: SendInAppParams): void;
     static openNativeAd(openNativeParams: OpenNativeAdParams): void;
     static requestTrackingWithIdfa(): void;
+    static areNotificationsEnabled(): Promise<boolean>;
+    static requestNotificationPermission(): Promise<PERMISSION_STATUS>;
 }
