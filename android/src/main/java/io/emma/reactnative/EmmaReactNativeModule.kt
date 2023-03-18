@@ -471,6 +471,8 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
             }
         }
 
-        EMMA.getInstance().requestNotificationPermission(permissionListener)
+         Utils.runOnMainThread {
+            EMMA.getInstance().requestNotificationPermission(permissionListener)
+        }
     }
 }

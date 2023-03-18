@@ -3,6 +3,7 @@ import EmmaSdk, {
   LoginRegisterUserParams,
   NativeAd,
   StartSessionParams,
+  PERMISSION_STATUS,
 } from 'emma-react-native-sdk';
 import React, { useEffect, useState } from 'react';
 import {
@@ -45,6 +46,10 @@ const userParams: LoginRegisterUserParams = {
 const App = () => {
   // Internal states
   const [started, setStarted] = useState(SESSION_STATE.NONE);
+  const [notificationEnabled, setNotificationsEnabled] = useState(false);
+  const [notificationPermissionStatus, setNotificationPermissionStatus] = useState<PERMISSION_STATUS | null>(
+    null
+  );
   const [logged, setLogged] = useState(false);
   const [registered, setRegistered] = useState(false);
   const [nativeAds, setNativeAds] = useState<NativeAd[] | null>(null);
@@ -92,6 +97,36 @@ const App = () => {
     } catch (err) {
       setStarted(SESSION_STATE.FAILED);
       console.error('Session failed to start', err);
+    }
+
+    const areNotificationsEnabled = await EmmaSdk.areNotificationsEnabled();
+    setNotificationsEnabled(areNotificationsEnabled);
+  };
+
+  const requestNotificationsPermission = async () => {
+    try {
+      const permissionStatus = await EmmaSdk.requestNotificationPermission();
+      setNotificationPermissionStatus(permissionStatus);
+    } catch (e) {
+      setNotificationPermissionStatus(null);
+    }
+
+    const areNotificationsEnabled = await EmmaSdk.areNotificationsEnabled();
+    setNotificationsEnabled(areNotificationsEnabled);
+  };
+
+  const permissionStatusToString = (permissionStatus: PERMISSION_STATUS | null) => {
+    switch (permissionStatus) {
+      case PERMISSION_STATUS.GRANTED:
+        return 'GRANTED';
+      case PERMISSION_STATUS.DENIED:
+        return 'DENIED';
+      case PERMISSION_STATUS.SHOULD_PERMISSION_RATIONALE:
+        return 'SHOULD_PERMISSION_RATIONALE';
+      case PERMISSION_STATUS.UNSUPPORTED:
+        return 'UNSUPPORTED';
+      default:
+        return '';
     }
   };
 
@@ -159,6 +194,20 @@ const App = () => {
             style={started !== SESSION_STATE.STARTED && styles.veil}
             pointerEvents={started === SESSION_STATE.STARTED ? 'auto' : 'none'}
           >
+            {isAndroid && (
+              <View>
+                <Section
+                  title="Notifications Permission"
+                  subtitle={notificationEnabled ? 'Enabled' : 'Disabled'}
+                >
+                  Request notifications permissions for Android 13.{'\n'}
+                  Permission status: {permissionStatusToString(notificationPermissionStatus)}
+                </Section>
+                <View style={styles.buttonSection}>
+                  <Button onPress={requestNotificationsPermission} title="Request notifications permission" />
+                </View>
+              </View>
+            )}
             <Section title="Register User" subtitle={registered ? 'User registered' : ''} />
             <View style={styles.buttonSection}>
               <Button onPress={handleRegisterUser} title="Register User" disabled={registered} />
