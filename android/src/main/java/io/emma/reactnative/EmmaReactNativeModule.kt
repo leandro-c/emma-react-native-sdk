@@ -451,23 +451,23 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     @ReactMethod
     fun requestNotificationPermission(promise: Promise) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
-            promise.resolve(PermissionStatus.Unsupported)
+            promise.resolve(PermissionStatus.Unsupported.ordinal)
             return;
         }
 
         val permissionListener = object: EMMAPermissionInterface {
             override fun onPermissionGranted(permission: String, isFirstTime: Boolean) {
-                promise.resolve(PermissionStatus.Granted)
+                promise.resolve(PermissionStatus.Granted.ordinal)
             }
 
             override fun onPermissionDenied(permission: String) {
-                promise.resolve(PermissionStatus.Denied)
+                promise.resolve(PermissionStatus.Denied.ordinal)
             }
 
             override fun onPermissionWaitingForAction(permission: String) { }
 
             override fun onPermissionShouldShowRequestPermissionRationale(permission: String) {
-                promise.resolve(PermissionStatus.ShouldPermissionRationale)
+                promise.resolve(PermissionStatus.ShouldPermissionRationale.ordinal)
             }
         }
 
