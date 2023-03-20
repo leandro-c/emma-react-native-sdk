@@ -10,12 +10,12 @@ Pod::Spec.new do |s|
   s.requires_arc     = true
 
   # REMOTE
-  #s.source           =  { :git => pkg["repository"]["url"], :tag => pkg["version"] }
-  #s.source_files     = 'ios/*.{h,m,swift}'
+  s.source           =  { :git => pkg["repository"]["url"], :tag => pkg["version"] }
+  s.source_files     = 'ios/*.{h,m,swift}'
 
   # LOCAL
-  s.source           =  { :git => '../../' }
-  s.source_files     = 'ios/*.{h,m,swift}'
+  #s.source           =  { :git => '../../' }
+  #s.source_files     = 'ios/*.{h,m,swift}'
 
   s.static_framework = true
   s.summary          = pkg["description"]
