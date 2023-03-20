@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/adriancarrera/Documents/devel/emma-react-native-tmp/ios/EmmaReactNative.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
