@@ -9,6 +9,7 @@ import io.emma.android.EMMA
 import io.emma.android.enums.*
 import io.emma.android.model.*
 import io.emma.android.interfaces.EMMAPermissionInterface
+import io.emma.android.utils.EMMAUtils
 
 
 
@@ -450,7 +451,7 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
 
     @ReactMethod
     fun requestNotificationPermission(promise: Promise) {
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+       if (Build.VERSION.SDK_INT < 33 || EMMAUtils.getTargetSdkVersion(reactApplicationContext.applicationContext) < 33) {
             promise.resolve(PermissionStatus.Unsupported.ordinal)
             return;
         }

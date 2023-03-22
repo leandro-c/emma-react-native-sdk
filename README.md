@@ -50,7 +50,7 @@ For example, to launch the iOS version:
 
 ```
 cd EmmaReactNativeExample
-npm run clear:cache
+npm run cache:clear
 npm install
 cd ios
 pod install
