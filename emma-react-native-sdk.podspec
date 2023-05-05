@@ -18,8 +18,6 @@ Pod::Spec.new do |s|
   #s.source           =  { :git => '../../' }
   #s.source_files     = 'ios/**/*.{h,m,mm,swift}'
 
-  end
-
   s.summary          = pkg["description"]
   s.version          = pkg["version"]
   s.dependency 'React'
