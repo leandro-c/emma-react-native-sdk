@@ -10,9 +10,14 @@ enum DefaultEvent {
     case register
 }
 
-@objc(EmmaReactNative)
-open class EmmaReactNative: NSObject {
+@objcMembers
+public class EmmaReactNativeManager: NSObject {
     static var sessionStarted = false
+    public static let shared = EmmaReactNativeManager()
+
+    private override init() {
+        super.init()
+    }
     
     /**
         This method avoids that SDK launching on main queue
@@ -23,7 +28,7 @@ open class EmmaReactNative: NSObject {
 
     //MARK: Start session and basics
     @objc
-    func startSession(_ configurationMap: [String : Any],
+    public func startSession(_ configurationMap: [String : Any],
                       resolver resolve: RCTPromiseResolveBlock,
                       rejecter reject: RCTPromiseRejectBlock) {
         
@@ -41,7 +46,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func trackUserLocation(_ resolve: RCTPromiseResolveBlock,
+    public func trackUserLocation(_ resolve: RCTPromiseResolveBlock,
                            rejecter reject: RCTPromiseRejectBlock) {
         DispatchQueue.main.async {
             EMMA.trackLocation()
@@ -51,7 +56,7 @@ open class EmmaReactNative: NSObject {
     
     //MARK: Track user info
     @objc
-    func trackUserExtraInfo(_ infoMap: [String : Any],
+    public func trackUserExtraInfo(_ infoMap: [String : Any],
                             resolver resolve: RCTPromiseResolveBlock,
                             rejecter reject: RCTPromiseRejectBlock) {
         
@@ -66,7 +71,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func setCustomerId(_ customerId: String,
+    public func setCustomerId(_ customerId: String,
                        resolver resolve: RCTPromiseResolveBlock,
                        rejecter reject: RCTPromiseRejectBlock) {
         
@@ -82,7 +87,7 @@ open class EmmaReactNative: NSObject {
     
     //MARK: Events
     @objc
-    func trackEvent(_ requestMap: [String : Any],
+    public func trackEvent(_ requestMap: [String : Any],
                     resolver resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
@@ -103,7 +108,7 @@ open class EmmaReactNative: NSObject {
         resolve(nil)
     }
     
-    func processLoginRegisten(_ loginMap: [String: Any],
+    func processLoginRegister(_ loginMap: [String: Any],
                               type: DefaultEvent,
                               resolver resolve: RCTPromiseResolveBlock,
                               rejecter reject: RCTPromiseRejectBlock) {
@@ -127,22 +132,22 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func loginUser(_ loginMap: [String: Any],
+    public func loginUser(_ loginMap: [String: Any],
                    resolver resolve: RCTPromiseResolveBlock,
                    rejecter reject: RCTPromiseRejectBlock) {
-        processLoginRegisten(loginMap, type: .login, resolver: resolve, rejecter: reject)
+        processLoginRegister(loginMap, type: .login, resolver: resolve, rejecter: reject)
     }
     
     @objc
-    func registerUser(_ registerMap: [String: Any],
+    public func registerUser(_ registerMap: [String: Any],
                       resolver resolve: RCTPromiseResolveBlock,
                       rejecter reject: RCTPromiseRejectBlock) {
-        processLoginRegisten(registerMap, type: .register, resolver: resolve, rejecter: reject)
+        processLoginRegister(registerMap, type: .register, resolver: resolve, rejecter: reject)
     }
     
     //MARK: Inapp messaging methods
     @objc
-    func inAppMessage(_ messageMap: [String: Any],
+    public func inAppMessage(_ messageMap: [String: Any],
                       resolver resolve: @escaping RCTPromiseResolveBlock,
                       rejecter reject: @escaping RCTPromiseRejectBlock) {
         
@@ -206,7 +211,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func sendInAppImpression(_ params: [String : Any],
+    public func sendInAppImpression(_ params: [String : Any],
                              resolver resolve: RCTPromiseResolveBlock,
                              rejecter reject: RCTPromiseRejectBlock) {
         
@@ -214,7 +219,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func sendInAppClick(_ params: [String : Any],
+    public func sendInAppClick(_ params: [String : Any],
                         resolver resolve: RCTPromiseResolveBlock,
                         rejecter reject: RCTPromiseRejectBlock) {
         
@@ -222,7 +227,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func openNativeAd(_ params: [String : Any],
+    public func openNativeAd(_ params: [String : Any],
                       resolver resolve: RCTPromiseResolveBlock,
                       rejecter reject: RCTPromiseRejectBlock) {
         
@@ -242,7 +247,7 @@ open class EmmaReactNative: NSObject {
     //MARK: Push methods
     //Push params only for Android
     @objc
-    func startPush(_ pushParams: NSDictionary,
+    public func startPush(_ pushParams: NSDictionary,
                    resolver resolve: RCTPromiseResolveBlock,
                    rejecter reject: RCTPromiseRejectBlock) {
         
@@ -251,7 +256,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func sendPushToken(_ token: String,
+    public func sendPushToken(_ token: String,
                        resolver resolve: RCTPromiseResolveBlock,
                        rejecter reject: RCTPromiseRejectBlock) {
         
@@ -267,20 +272,20 @@ open class EmmaReactNative: NSObject {
     
     //MARK: GDPR
     @objc
-    func isUserTrackingEnabled(_ resolve: RCTPromiseResolveBlock,
+    public func isUserTrackingEnabled(_ resolve: RCTPromiseResolveBlock,
                                rejecter reject: RCTPromiseRejectBlock) {
         resolve(EMMA.isUserTrackingEnabled())
     }
     
     @objc
-    func enableUserTracking(_ resolve: RCTPromiseResolveBlock,
+    public func enableUserTracking(_ resolve: RCTPromiseResolveBlock,
                             rejecter reject: RCTPromiseRejectBlock) {
         EMMA.enableUserTracking()
         resolve(nil)
     }
     
     @objc
-    func disableUserTracking(_ deleteUser: Bool,
+    public func disableUserTracking(_ deleteUser: Bool,
                             resolver resolve: RCTPromiseResolveBlock,
                             rejecter reject: RCTPromiseRejectBlock) {
         EMMA.disableUserTracking(deleteUser: deleteUser)
@@ -288,7 +293,7 @@ open class EmmaReactNative: NSObject {
     }
 
     @objc
-    func startOrder(_ orderMap: [String : Any],
+    public func startOrder(_ orderMap: [String : Any],
                     resolver resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
@@ -328,7 +333,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func addProduct(_ productMap: [String : Any],
+    public func addProduct(_ productMap: [String : Any],
                     resolver resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
@@ -349,7 +354,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func trackOrder(_ resolve: RCTPromiseResolveBlock,
+    public func trackOrder(_ resolve: RCTPromiseResolveBlock,
                     rejecter reject: RCTPromiseRejectBlock) {
         
         EMMA.trackOrder()
@@ -357,7 +362,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func cancelOrder(_ orderId: String,
+    public func cancelOrder(_ orderId: String,
                      resolver resolve: RCTPromiseResolveBlock,
                      rejecter reject: RCTPromiseRejectBlock) {
         
@@ -373,7 +378,7 @@ open class EmmaReactNative: NSObject {
     }
     
     @objc
-    func requestTrackingWithIdfa(_ resolve: RCTPromiseResolveBlock,
+    public func requestTrackingWithIdfa(_ resolve: RCTPromiseResolveBlock,
                                  rejecter reject: RCTPromiseRejectBlock) {
         if #available(iOS 14, *) {
             DispatchQueue.main.async {

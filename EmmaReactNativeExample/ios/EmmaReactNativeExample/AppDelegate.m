@@ -6,7 +6,7 @@
 
 // EMMA imports
 #import <React/RCTLinkingManager.h>
-@import emma_react_native_sdk;
+#import <emma-react-native-sdk/EmmaReactNative.h>
 //
 
 #ifdef FB_SONARKIT_ENABLED
@@ -57,7 +57,7 @@ static void InitializeFlipper(UIApplication *application) {
   
   // Pass push delegate to EMMA bridge
   if (@available(iOS 10.0, *)) {
-    [[EmmaReactNativePush shared] setPushNotificationsDelegate:self];
+    [EmmaReactNative setPushNotificationsDelegate:self];
   }
   
   return YES;
@@ -74,31 +74,27 @@ static void InitializeFlipper(UIApplication *application) {
 
 //MARK: EMMA - Push methods
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-   [[EmmaReactNativePush shared] registerToken:deviceToken];
-}
-
--(void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(nonnull void (^)(UIBackgroundFetchResult))completionHandler {
-  [[EmmaReactNativePush shared] didReceiveNotificationWithUserInfo:userInfo];
+  [EmmaReactNative registerToken:deviceToken];
 }
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler  API_AVAILABLE(ios(10.0)){
-  [[EmmaReactNativePush shared] didReceiveNotificationWithUserInfo:response.notification.request.content.userInfo actionIdentifier:response.actionIdentifier];
+  [EmmaReactNative didReceiveNotificationResponse:response];
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler  API_AVAILABLE(ios(10.0)){
-  [[EmmaReactNativePush shared] willPresentNotificationWithUserInfo:notification.request.content.userInfo];
+  [EmmaReactNative willPresentNotificationWithUserInfo:notification];
 }
 
 //MARK: EMMA - Deeplinking
 - (void)openURL:(NSURL*)url options:(NSDictionary<NSString *, id> *)options completionHandler:(void (^ __nullable)(BOOL success))completion {
-  [EmmaReactNativeLinking handleLinkWithUrl:url];
+  [EmmaReactNative handleLink:url];
   completion([RCTLinkingManager application:[UIApplication sharedApplication] openURL:url sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey] annotation:options[UIApplicationOpenURLOptionsAnnotationKey]]);
 }
 
 //MARK: EMMA - Universal links
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler {
   if (userActivity.webpageURL) {
-    [EmmaReactNativeLinking handleLinkWithUrl:userActivity.webpageURL];
+    [EmmaReactNative handleLink:userActivity.webpageURL];
   }
   return [RCTLinkingManager application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }

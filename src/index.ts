@@ -7,13 +7,13 @@ import {
   LoginRegisterUserParams,
   NativeAd,
   OpenNativeAdParams,
+  PERMISSION_STATUS,
   SendInAppParams,
   StartOrderParams,
   StartPushParams,
   StartSessionParams,
   TrackEventParams,
   TrackUserExtraInfoParams,
-  PERMISSION_STATUS,
 } from './types/index.types';
 
 export * from './types/index.types';

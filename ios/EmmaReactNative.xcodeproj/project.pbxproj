@@ -7,14 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		112B99B9260CFEFE0039C2C5 /* EmmaReactNativeLinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112B99B8260CFEFE0039C2C5 /* EmmaReactNativeLinks.swift */; };
 		114CCC992607BBE000767410 /* EmmaReactNativePush.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CCC972607BBE000767410 /* EmmaReactNativePush.swift */; };
 		114CCC9A2607BBE000767410 /* EmmaNativeAdDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114CCC982607BBE000767410 /* EmmaNativeAdDelegate.swift */; };
 		11607DE32600BE0F004E4AB6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11607DE22600BE0F004E4AB6 /* Utils.swift */; };
 		11607DE62600C26B004E4AB6 /* EmmaSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11607DE52600C26B004E4AB6 /* EmmaSerializer.swift */; };
 		11607DE92600D97E004E4AB6 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11607DE82600D97E004E4AB6 /* Error.swift */; };
-		11AD75E125FFBA4E0004216B /* EmmaReactNative.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* EmmaReactNative.m */; };
-		F4FF95D7245B92E800C19C63 /* EmmaReactNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FF95D6245B92E800C19C63 /* EmmaReactNative.swift */; };
+		11AD75E125FFBA4E0004216B /* EmmaReactNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* EmmaReactNative.mm */; };
+		952B76BE2A050ECB0012670E /* EmmaReactNativeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 952B76BD2A050ECB0012670E /* EmmaReactNativeManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		112B99B8260CFEFE0039C2C5 /* EmmaReactNativeLinks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmmaReactNativeLinks.swift; sourceTree = "<group>"; };
 		114CCC972607BBE000767410 /* EmmaReactNativePush.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmmaReactNativePush.swift; sourceTree = "<group>"; };
 		114CCC982607BBE000767410 /* EmmaNativeAdDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmmaNativeAdDelegate.swift; sourceTree = "<group>"; };
 		1150F63526022AFC009C8CD2 /* libPods-EMMAReactNativeExample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-EMMAReactNativeExample.a"; path = "../../../../Library/Developer/Xcode/DerivedData/EMMAReactNativeExample-busfdvksvbdegsdptvoyhzvnhwoo/Build/Products/Debug-iphonesimulator/libPods-EMMAReactNativeExample.a"; sourceTree = "<group>"; };
@@ -40,10 +38,11 @@
 		11607DE82600D97E004E4AB6 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		11AD75C925FF96E20004216B /* EMMA_iOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = EMMA_iOS.xcframework; path = "../../eMMa-iOS-SDK/EMMA_iOS.xcframework"; sourceTree = "<group>"; };
 		11AD75CF25FF992B0004216B /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; name = Podfile; path = ../example/ios/Podfile; sourceTree = "<group>"; };
-		134814201AA4EA6300B7C361 /* libEmmaReactNativeSdk.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmmaReactNativeSdk.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5891CC2AC0600A0062D /* EmmaReactNative.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmmaReactNative.m; sourceTree = "<group>"; };
+		134814201AA4EA6300B7C361 /* libEmmaReactNative.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libEmmaReactNative.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		952B76BC2A046B860012670E /* EmmaReactNative.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmmaReactNative.h; sourceTree = "<group>"; };
+		952B76BD2A050ECB0012670E /* EmmaReactNativeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmaReactNativeManager.swift; sourceTree = "<group>"; };
+		B3E7B5891CC2AC0600A0062D /* EmmaReactNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = EmmaReactNative.mm; sourceTree = "<group>"; };
 		F4FF95D5245B92E700C19C63 /* EmmaReactNative-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmmaReactNative-Bridging-Header.h"; sourceTree = "<group>"; };
-		F4FF95D6245B92E800C19C63 /* EmmaReactNative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmaReactNative.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +69,7 @@
 		134814211AA4EA7D00B7C361 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				134814201AA4EA6300B7C361 /* libEmmaReactNativeSdk.a */,
+				134814201AA4EA6300B7C361 /* libEmmaReactNative.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,14 +77,14 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				112B99B8260CFEFE0039C2C5 /* EmmaReactNativeLinks.swift */,
+				952B76BD2A050ECB0012670E /* EmmaReactNativeManager.swift */,
+				952B76BC2A046B860012670E /* EmmaReactNative.h */,
 				114CCC982607BBE000767410 /* EmmaNativeAdDelegate.swift */,
 				114CCC972607BBE000767410 /* EmmaReactNativePush.swift */,
 				11607DE82600D97E004E4AB6 /* Error.swift */,
 				11607DE52600C26B004E4AB6 /* EmmaSerializer.swift */,
 				11607DE22600BE0F004E4AB6 /* Utils.swift */,
-				F4FF95D6245B92E800C19C63 /* EmmaReactNative.swift */,
-				B3E7B5891CC2AC0600A0062D /* EmmaReactNative.m */,
+				B3E7B5891CC2AC0600A0062D /* EmmaReactNative.mm */,
 				F4FF95D5245B92E700C19C63 /* EmmaReactNative-Bridging-Header.h */,
 				134814211AA4EA7D00B7C361 /* Products */,
 				11AD75C825FF96E20004216B /* Frameworks */,
@@ -109,7 +108,7 @@
 			);
 			name = EmmaReactNative;
 			productName = RCTDataManager;
-			productReference = 134814201AA4EA6300B7C361 /* libEmmaReactNativeSdk.a */;
+			productReference = 134814201AA4EA6300B7C361 /* libEmmaReactNative.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -149,12 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11AD75E125FFBA4E0004216B /* EmmaReactNative.m in Sources */,
+				952B76BE2A050ECB0012670E /* EmmaReactNativeManager.swift in Sources */,
+				11AD75E125FFBA4E0004216B /* EmmaReactNative.mm in Sources */,
 				11607DE62600C26B004E4AB6 /* EmmaSerializer.swift in Sources */,
 				114CCC9A2607BBE000767410 /* EmmaNativeAdDelegate.swift in Sources */,
 				114CCC992607BBE000767410 /* EmmaReactNativePush.swift in Sources */,
-				112B99B9260CFEFE0039C2C5 /* EmmaReactNativeLinks.swift in Sources */,
-				F4FF95D7245B92E800C19C63 /* EmmaReactNative.swift in Sources */,
 				11607DE92600D97E004E4AB6 /* Error.swift in Sources */,
 				11607DE32600BE0F004E4AB6 /* Utils.swift in Sources */,
 			);
@@ -268,7 +266,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = EmmaReactNativeSdk;
+				PRODUCT_MODULE_NAME = EmmaReactNative;
+				PRODUCT_NAME = EmmaReactNative;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EmmaReactNative-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -288,7 +287,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = EmmaReactNativeSdk;
+				PRODUCT_MODULE_NAME = EmmaReactNative;
+				PRODUCT_NAME = EmmaReactNative;
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "EmmaReactNative-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
