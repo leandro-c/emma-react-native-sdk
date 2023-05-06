@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate, UNUser
     
     // Pass push delegate to EMMA bridge
     if #available(iOS 10.0, *) {
-      EmmaReactNativePush.shared.setPushNotificationsDelegate(self)
+      EmmaReactNative.setPushNotificationsDelegate(self)
     }
     
     return true
@@ -73,41 +73,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RCTBridgeDelegate, UNUser
   
   
   func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    EmmaReactNativePush.shared.registerToken(deviceToken)
+    EmmaReactNative.registerToken(deviceToken)
   }
   
   func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
     NSLog("Error registering notifications " + error.localizedDescription);
   }
-  
-  func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any], fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-    EmmaReactNativePush.shared.didReceiveNotification(userInfo: userInfo)
-    completionHandler(.noData)
-  }
+
   
   @available(iOS 10.0, *)
   func userNotificationCenter(_ center: UNUserNotificationCenter,  willPresent notification: UNNotification, withCompletionHandler   completionHandler: @escaping (_ options:   UNNotificationPresentationOptions) -> Void) {
     
-      EmmaReactNativePush.shared.willPresentNotification(userInfo: notification.request.content.userInfo)
+      EmmaReactNative.willPresent(notification)
       completionHandler([.badge, .sound])
     }
   
   @available(iOS 10.0, *)
   func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
     
-      EmmaReactNativePush.shared.didReceiveNotification(userInfo: response.notification.request.content.userInfo)
+      EmmaReactNative.didReceive(response, withActionIdentifier: response.actionIdentifier)
       completionHandler()
   }
   
   func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
-    EmmaReactNativeLinking.handleLink(url: url)
+    EmmaReactNative.handleLink(url)
     return RCTLinkingManager.application(UIApplication.shared, open: url, options: options)
   }
   
   func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
     
     if let webUrl = userActivity.webpageURL {
-      EmmaReactNativeLinking.handleLink(url: webUrl)
+      EmmaReactNative.handleLink(webUrl)
     }
 
     return RCTLinkingManager.application(application, continue: userActivity, restorationHandler: restorationHandler)

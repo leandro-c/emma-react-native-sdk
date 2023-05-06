@@ -32,7 +32,7 @@ RCT_EXPORT_MODULE();
     [[EmmaReactNativePush shared] didReceiveNotificationWithUserInfo:response.notification.request.content.userInfo actionIdentifier:actionIdentifier];
 }
 
-+(void) willPresentNotificationWithUserInfo:(UNNotification *)notification {
++(void) willPresentNotification:(UNNotification *)notification {
     [[EmmaReactNativePush shared] willPresentNotificationWithUserInfo:notification.request.content.userInfo];
 }
 

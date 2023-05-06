@@ -3,7 +3,7 @@ PODS:
   - CocoaAsyncSocket (7.6.5)
   - DoubleConversion (1.1.6)
   - eMMa (4.11.4)
-  - emma-react-native-sdk (1.4.0-beta.1):
+  - emma-react-native-sdk (1.4.0-rc.1):
     - eMMa (~> 4.11.4)
     - React
   - FBLazyVector (0.71.4)
@@ -581,7 +581,7 @@ SPEC CHECKSUMS:
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   eMMa: 0507d769b7059a2098ddb91d372a2b980632a910
-  emma-react-native-sdk: fff0bd9ffa8713d501bbc3da8f204731abb6affc
+  emma-react-native-sdk: 564b2df460cf080190143127595a8f1b9da4d21d
   FBLazyVector: 446e84642979fff0ba57f3c804c2228a473aeac2
   FBReactNativeSpec: 241709e132e3bf1526c1c4f00bc5384dd39dfba9
   Flipper: 26fc4b7382499f1281eb8cb921e5c3ad6de91fe0

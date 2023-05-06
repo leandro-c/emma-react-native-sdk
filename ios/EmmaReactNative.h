@@ -6,6 +6,6 @@
 +(void) registerToken: (NSData *) deviceToken;
 +(void) didReceiveNotificationResponse:(UNNotificationResponse *)response;
 +(void) didReceiveNotificationResponse:(UNNotificationResponse *)response withActionIdentifier:(NSString*) actionIdentifier;
-+(void) willPresentNotificationWithUserInfo:(UNNotification *)notification;
++(void) willPresentNotification:(UNNotification *)notification;
 +(void) handleLink: (NSURL*) url;
 @end
