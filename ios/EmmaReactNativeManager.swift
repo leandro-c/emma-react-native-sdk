@@ -141,8 +141,7 @@ public class EmmaReactNativeManager: NSObject {
     //MARK: Inapp messaging methods
     @objc
     public class func inAppMessage(_ messageMap: [String: Any],
-                      resolver resolve: @escaping RCTPromiseResolveBlock,
-                      rejecter reject: @escaping RCTPromiseRejectBlock) {
+                                   resolve: @escaping (Any?) -> Void, reject: @escaping (String, String, NSError?) -> Void ) {
         
         let type = messageMap["type"] as? String
         guard let requestType = EmmaSerializer.inAppTypeFromString(inAppType: type) else {

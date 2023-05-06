@@ -3,17 +3,17 @@
 #import <React/RCTLog.h>
 #import <UserNotifications/UserNotifications.h>
 
-#if __has_include(<emma-react-native-sdk/emma-react-native-sdk-Swift.h>)
-#import <emma-react-native-sdk/emma-react-native-sdk-Swift.h>
-#else
-#import "emma_react_native_sdk-Swift.h"
-#endif
 
+#import "emma_react_native_sdk-Swift.h"
 
 
 @implementation EmmaReactNative
 
 RCT_EXPORT_MODULE();
+
++ (BOOL)requiresMainQueueSetup {
+    return NO;
+}
 
 // MARK: AppDelegate
 +(void) setPushNotificationsDelegate: (id<UNUserNotificationCenterDelegate>) notificationCenterDelegate {
@@ -74,7 +74,11 @@ RCT_EXPORT_METHOD(setCustomerId:(NSString*) customerId resolver:(RCTPromiseResol
 
 //MARK: In-App messaging
 RCT_EXPORT_METHOD(inAppMessage:(NSDictionary*) messageMap resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
-    [EmmaReactNativeManager inAppMessage:messageMap resolver:resolve rejecter:reject];
+    [EmmaReactNativeManager inAppMessage:messageMap resolve:^(id result){
+        resolve(result);
+    } reject:^(NSString *code, NSString *message, NSError *error){
+        reject(code, message, error);
+    }];
 }
 
 RCT_EXPORT_METHOD(sendInAppImpression:(NSDictionary*) params resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {

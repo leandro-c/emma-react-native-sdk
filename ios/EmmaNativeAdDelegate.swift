@@ -8,11 +8,12 @@
 import EMMA_iOS
 
 
+@objcMembers
 class EmmaNativeAdDelegate: NSObject, EMMAInAppMessageDelegate, EMMARequestDelegate {
-    let resolve: RCTPromiseResolveBlock
-    let reject: RCTPromiseRejectBlock
+    var resolve: (Any?) -> Void
+    var reject: (String, String, NSError?) -> Void 
     
-    required init(resolve: @escaping RCTPromiseResolveBlock, reject: @escaping RCTPromiseRejectBlock) {
+    init(resolve: @escaping (Any?) -> Void, reject: @escaping (String, String, NSError?) -> Void ) {
         self.resolve = resolve
         self.reject = reject
     }
