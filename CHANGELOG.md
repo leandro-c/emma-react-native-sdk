@@ -2,7 +2,7 @@
 
 ## 1.4.0
 
-- Reestructured iOS SDK to fix some problems with header import on AppDelegate. 
+- Reestructured iOS SDK to fix some problems with header import in AppDelegate. 
 
 ```objective-c
 // Change import 
