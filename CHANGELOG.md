@@ -10,7 +10,7 @@
 // to
 #import <emma-react-native-sdk/EmmaReactNative.h>
 ````
-Methods that have changed:
+Change the AppDelegate methods to these:
 
 ```objective-c
 [EmmaReactNative setPushNotificationsDelegate:self];
