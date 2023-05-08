@@ -180,6 +180,7 @@ fun ReadableMap.toStringMap(): Map<String, String> {
         when (getType(key)) {
             ReadableType.Number -> map[key] = getDouble(key).toString()
             ReadableType.String -> map[key] = getString(key) ?: ""
+            else -> continue
         }
     }
     return map

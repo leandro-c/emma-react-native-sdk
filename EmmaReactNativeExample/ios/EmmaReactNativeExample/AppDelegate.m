@@ -78,11 +78,11 @@ static void InitializeFlipper(UIApplication *application) {
 }
 
 -(void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler  API_AVAILABLE(ios(10.0)){
-  [EmmaReactNative didReceiveNotificationResponse:response];
+  [EmmaReactNative didReceiveNotificationResponse:response withActionIdentifier:response.actionIdentifier];
 }
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions))completionHandler  API_AVAILABLE(ios(10.0)){
-  [EmmaReactNative willPresentNotificationWithUserInfo:notification];
+  [EmmaReactNative willPresentNotification:notification];
 }
 
 //MARK: EMMA - Deeplinking
