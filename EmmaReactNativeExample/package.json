@@ -13,7 +13,7 @@
     "cache:clear": "watchman watch-del-all && rm package-lock.json && rm -rf node_modules && npm install --legacy-peer-deps && rm -rf /tmp/metro-* && npm run start -- --reset-cache"
   },
   "dependencies": {
-    "emma-react-native-sdk": "^1.4.0",
+    "emma-react-native-sdk": "^1.4.1",
     "react": "18.2.0",
     "react-native": "0.71.4"
   },

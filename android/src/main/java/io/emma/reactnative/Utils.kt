@@ -30,11 +30,7 @@ object Utils {
 
     fun getAppName(context: Context): String? {
         val ai = try {
-             if (android.os.Build.VERSION.SDK_INT >= 33) {
-                context.packageManager.getApplicationInfo(context.packageName, PackageManager.ApplicationInfoFlags.of(0));
-            } else {
-                context.packageManager.getApplicationInfo(context.packageName, 0);
-            }
+            context.packageManager.getApplicationInfo(context.packageName, 0);
         } catch (e: PackageManager.NameNotFoundException) {
             null
         }
