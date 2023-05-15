@@ -1,15 +1,24 @@
 # Changelog
 
+## 1.4.2
+
+- Fixed Android issue with targetSdkVersion when it was lower than 33.
+
+## 1.4.1
+
+- Fixed Android compilatation issue with Kotlin versions >= 1.7.
+
 ## 1.4.0
 
-- Reestructured iOS SDK to fix some problems with header import in AppDelegate. 
+- Reestructured iOS SDK to fix some problems with header import in AppDelegate.
 
 ```objective-c
-// Change import 
+// Change import
 @import emma_react_native_sdk;
 // to
 #import <emma-react-native-sdk/EmmaReactNative.h>
-````
+```
+
 Change the AppDelegate methods to these:
 
 ```objective-c
