@@ -14,6 +14,7 @@ import {
   StartSessionParams,
   TrackEventParams,
   TrackUserExtraInfoParams,
+  UpdateConversionValueSkad4,
 } from './types/index.types';
 
 export * from './types/index.types';
@@ -104,5 +105,17 @@ export default class EmmaSdk {
       return EmmaReactNative.requestNotificationPermission();
     }
     return Promise.resolve(PERMISSION_STATUS.UNSUPPORTED);
+  }
+
+  static updateConversionValue(conversionValue: number) {
+    if (Platform.OS === 'ios') {
+      EmmaReactNative.updateConversionValue(conversionValue);
+    }
+  }
+
+  static updateConversionValueSkad4(conversionModel: UpdateConversionValueSkad4) {
+    if (Platform.OS === 'ios') {
+      EmmaReactNative.updateConversionValueSkad4(conversionModel);
+    }
   }
 }

@@ -380,4 +380,42 @@ public class EmmaReactNativeManager: NSObject {
         
         resolve(nil)
     }
+
+    @objc
+    public class func updateConversionValue(_ conversionValue: Int,
+                                           resolver resolve: RCTPromiseResolveBlock,
+                                           rejecter reject: RCTPromiseRejectBlock) {
+        guard conversionValue >= 1, conversionValue <= 63 else {
+            let error = NSError(domain: Error.invalidConversionValue, code: 0, userInfo: nil)
+            reject(String(error.code), error.domain, error)
+            return
+        }
+        
+        EMMA.updatePostbackConversionValue(conversionValue)
+    }
+    
+    @objc
+    public class func updateConversionValueSkad4(_ conversionModel: [String: Any],
+                                           resolver resolve: RCTPromiseResolveBlock,
+                                           rejecter reject: RCTPromiseRejectBlock) {
+        
+        let conversionValue = conversionModel["conversionValue"] as? Int ?? 0
+        let coarseValue = conversionModel["coarseValue"] as? String ?? ""
+        let lockWindow = conversionModel["lockWindow"] as? Bool ?? false
+        
+        guard conversionValue >= 1, conversionValue <= 63 else {
+            let error = NSError(domain: Error.invalidConversionValue, code: 1, userInfo: nil)
+            reject(String(error.code), error.domain, error)
+            return
+        }
+        
+        let validCoarseValues = ["high", "medium", "low"]
+        guard Utils.isValidField(coarseValue), validCoarseValues.contains(coarseValue)  else {
+            let error = NSError(domain: Error.invalidConversionValue, code: 0, userInfo: nil)
+            reject(String(error.code), error.domain, error)
+            return
+        }
+        
+        EMMA.updatePostbackConversionValue(conversionValue, coarseValue: coarseValue, lockWindow: lockWindow)
+    }
 }

@@ -12,10 +12,10 @@ export enum IN_APP_TYPE {
 }
 
 export enum PERMISSION_STATUS {
-    GRANTED,
-    DENIED,
-    SHOULD_PERMISSION_RATIONALE,
-    UNSUPPORTED,
+  GRANTED,
+  DENIED,
+  SHOULD_PERMISSION_RATIONALE,
+  UNSUPPORTED,
 }
 
 export interface StartSessionParams {
@@ -26,6 +26,8 @@ export interface StartSessionParams {
   customPowlinkDomains?: string[];
   customShortPowlinkDomains?: string[];
   trackScreenEvents?: boolean;
+  skanAttribution?: boolean;
+  skanCustomManagementAttribution?: boolean;
 }
 
 export interface StartPushParams {
@@ -98,4 +100,10 @@ export interface OpenNativeAdParams {
   campaignId: number;
   showOn: SHOW_ON;
   cta: string;
+}
+
+export interface UpdateConversionValueSkad4 {
+  conversionValue: number;
+  coarseValue: string;
+  lockWindow?: boolean;
 }

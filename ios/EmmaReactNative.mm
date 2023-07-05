@@ -141,4 +141,13 @@ RCT_EXPORT_METHOD(requestTrackingWithIdfa:(RCTPromiseResolveBlock)resolve reject
     [EmmaReactNativeManager requestTrackingWithIdfa:resolve rejecter:reject];
 }
 
+//MARK: SKAdNetwork
+RCT_EXPORT_METHOD(updateConversionValue:(NSInteger) conversionValue resolver: (RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+    [EmmaReactNativeManager updateConversionValue:conversionValue resolver:resolve rejecter:reject];
+}
+
+RCT_EXPORT_METHOD(updateConversionValueSkad4:(NSDictionary*) conversionModel resolver: (RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+    [EmmaReactNativeManager updateConversionValueSkad4:conversionModel resolver:resolve rejecter:reject];
+}
+
 @end

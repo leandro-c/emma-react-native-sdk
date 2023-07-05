@@ -33,6 +33,8 @@ class EmmaSerializer {
         let queueTime = config["queueTime"] as? Int
         let customPowlinkDomains = config["customPowlinkDomains"] as? [String]
         let customShortPowlinkDomains = config["customShortPowlinkDomains"] as? [String]
+        let skanAttribution = config["skanAttribution"] as? Bool
+        let skanCustomManagementAttribution = config["skanCustomManagementAttribution"] as? Bool
         
         let configuration = EMMAConfiguration()
         
@@ -60,6 +62,14 @@ class EmmaSerializer {
         
         if Utils.isValidField(customShortPowlinkDomains) {
             configuration.shortPowlinkDomains = customShortPowlinkDomains
+        }
+        
+        if Utils.isValidField(skanAttribution) {
+            configuration.skanAttribution = skanAttribution!
+        }
+        
+        if Utils.isValidField(skanCustomManagementAttribution) {
+            configuration.skanCustomManagementAttribution = skanCustomManagementAttribution!
         }
         
         return configuration

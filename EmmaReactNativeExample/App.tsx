@@ -2,8 +2,8 @@ import EmmaSdk, {
   IN_APP_TYPE,
   LoginRegisterUserParams,
   NativeAd,
-  StartSessionParams,
   PERMISSION_STATUS,
+  StartSessionParams,
 } from 'emma-react-native-sdk';
 import React, { useEffect, useState } from 'react';
 import {
@@ -13,8 +13,8 @@ import {
   ScrollView,
   StatusBar,
   StyleSheet,
-  useColorScheme,
   View,
+  useColorScheme,
 } from 'react-native';
 
 import Button from './components/Button';
@@ -223,6 +223,12 @@ const App = () => {
                   EmmaSdk.trackEvent({
                     eventToken: '7b358954cf16bc2b7830bb5307f80f96',
                     eventAttributes: { ReactNative: 'true' },
+                  });
+                  // Sends conversionValue to SKAdNetwork postback
+                  EmmaSdk.updateConversionValueSkad4({
+                    coarseValue: 'high',
+                    conversionValue: 3,
+                    lockWindow: false,
                   });
                 }}
                 title="Track event"

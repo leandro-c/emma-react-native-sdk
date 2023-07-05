@@ -86,4 +86,14 @@ export default class EmmaSdk {
         }
         return Promise.resolve(PERMISSION_STATUS.UNSUPPORTED);
     }
+    static updateConversionValue(conversionValue) {
+        if (Platform.OS === 'ios') {
+            EmmaReactNative.updateConversionValue(conversionValue);
+        }
+    }
+    static updateConversionValueSkad4(conversionModel) {
+        if (Platform.OS === 'ios') {
+            EmmaReactNative.updateConversionValueSkad4(conversionModel);
+        }
+    }
 }
