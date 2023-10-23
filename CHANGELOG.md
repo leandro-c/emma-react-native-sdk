@@ -34,8 +34,6 @@ Change the AppDelegate methods to these:
 [EmmaReactNative handleLink:url];
 ```
 
-- Fix Android compilation problems with Kotlin >= 1.7.
-
 ## 1.3.1
 
 - Added method to check if target 33 is setted in App for Android 13 notification permission.
