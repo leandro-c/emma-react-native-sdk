@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.0
+
+- SkadNetwork 4 support and notifications title.
+
 ## 1.4.2
 
 - Fixed Android issue with targetSdkVersion when it was lower than 33.
