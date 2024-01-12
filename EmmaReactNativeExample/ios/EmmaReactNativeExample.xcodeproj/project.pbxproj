@@ -53,12 +53,19 @@
 			remoteGlobalIDString = 1193CE8826123DAB0069E33F;
 			remoteInfo = NotificationService;
 		};
+		9549D61E2A96604500F8231A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1193CE8826123DAB0069E33F;
+			remoteInfo = NotificationService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1193611826138404009D591A /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
@@ -76,6 +83,15 @@
 				1193CE9026123DAB0069E33F /* NotificationService.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9549D61D2A965FB900F8231A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -288,6 +304,7 @@
 				D3DC0F191B8457F8834387FC /* [CP] Embed Pods Frameworks */,
 				5F6ECF3D0BF2459851C11776 /* [CP] Copy Pods Resources */,
 				1193611826138404009D591A /* Embed App Extensions */,
+				9549D61D2A965FB900F8231A /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -336,6 +353,7 @@
 			);
 			dependencies = (
 				1193CE8F26123DAB0069E33F /* PBXTargetDependency */,
+				9549D61F2A96604500F8231A /* PBXTargetDependency */,
 			);
 			name = EmmaReactNativeExample;
 			productName = EmmaReactNativeExample;
@@ -686,6 +704,11 @@
 			isa = PBXTargetDependency;
 			target = 1193CE8826123DAB0069E33F /* NotificationService */;
 			targetProxy = 1193CE8E26123DAB0069E33F /* PBXContainerItemProxy */;
+		};
+		9549D61F2A96604500F8231A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1193CE8826123DAB0069E33F /* NotificationService */;
+			targetProxy = 9549D61E2A96604500F8231A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

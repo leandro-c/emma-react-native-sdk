@@ -260,9 +260,9 @@ const App = () => {
               onPress={() => {
                 EmmaSdk.startOrder({
                   orderId: 'EMMA',
-                  totalPrice: 100,
+                  totalPrice: 24.12,
                   customerId: 'EMMA',
-                  currencyCode: 'EUR',
+                  currencyCode: 'USD',
                 });
                 setHasOrder(true);
                 setTrackedOrder(false);
@@ -275,8 +275,8 @@ const App = () => {
                 EmmaSdk.addProduct({
                   productId: 'SDK',
                   productName: 'SDK',
-                  quantity: 1,
-                  price: 1,
+                  quantity: 2,
+                  price: 12.23,
                   extras: { ReactNative: 'working' },
                 });
                 setHasProducts(true);

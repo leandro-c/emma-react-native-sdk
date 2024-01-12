@@ -290,7 +290,7 @@ public class EmmaReactNativeManager: NSObject {
                     rejecter reject: RCTPromiseRejectBlock) {
         
         let orderId = orderMap["orderId"] as? String
-        let totalPrice = orderMap["totalPrice"] as? Float
+        let totalPrice = orderMap["totalPrice"] as? Double
         let customerId = orderMap["customerId"] as? String
         let currencyCode = orderMap["currencyCode"] as? String
         let coupon = orderMap["coupon"] as? String
@@ -318,9 +318,7 @@ public class EmmaReactNativeManager: NSObject {
             EMMA.setCurrencyCode(currencyCode: currencyCode)
         }
         
-        //Fix: Added temporaly serCustomerId until fix the bug
-        EMMA.setCustomerId(customerId: customerId!)
-        EMMA.startOrder(orderId: orderId!, andCustomer: customerId!, withTotalPrice: totalPrice!, withExtras: extras, assignCoupon: coupon)
+        EMMA.startOrder(orderId: orderId!, andCustomer: customerId!, withTotalPrice: Float(totalPrice!), withExtras: extras, assignCoupon: coupon)
         resolve(nil)
     }
     
@@ -331,8 +329,8 @@ public class EmmaReactNativeManager: NSObject {
         
         let productId = productMap["productId"] as? String
         let productName = productMap["productName"] as? String
-        let quantity = productMap["quantity"] as? Float ?? 1
-        let price = productMap["price"] as? Float ?? 0.0
+        let quantity = productMap["quantity"] as? Double ?? 1
+        let price = productMap["price"] as? Double ?? 0.0
         let extras = productMap["extras"] as? Dictionary<String, String>
         
         guard Utils.isValidField(productId) else {
@@ -341,7 +339,7 @@ public class EmmaReactNativeManager: NSObject {
             return
         }
         
-        EMMA.addProduct(productId: productId!, andName: productName!, withQty: quantity, andPrice: price, withExtras: extras)
+        EMMA.addProduct(productId: productId!, andName: productName!, withQty: Float(quantity), andPrice: Float(price), withExtras: extras)
         resolve(nil)
     }
     

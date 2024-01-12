@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.5.1
+
+- Fixed RN not processing Float values correctly, changed to Double.
+
 ## 1.5.0
 
 - SkadNetwork 4 support and notifications title.
