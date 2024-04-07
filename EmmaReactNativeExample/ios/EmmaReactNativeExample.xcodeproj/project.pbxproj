@@ -21,6 +21,13 @@
 		28D7DCD16F44507FEEE5B887 /* libPods-NotificationServiceSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F883C98C5CAA04DE8615781A /* libPods-NotificationServiceSwift.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */; };
+		95A267CE2BC0C5C30047D2EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CD2BC0C5C30047D2EB /* StoreKit.framework */; };
+		95A267D02BC0C5CD0047D2EB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CF2BC0C5CD0047D2EB /* AdServices.framework */; };
+		95A267D22BC0C5E40047D2EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */; };
+		95A267D32BC0C5EB0047D2EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CD2BC0C5C30047D2EB /* StoreKit.framework */; };
+		95A267D42BC0C5EF0047D2EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */; };
+		95A267D52BC0C5FF0047D2EB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CF2BC0C5CD0047D2EB /* AdServices.framework */; };
+		95A267D72BC0C6650047D2EB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D62BC0C6650047D2EB /* AdSupport.framework */; };
 		A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */; };
 /* End PBXBuildFile section */
 
@@ -123,6 +130,10 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EmmaReactNativeExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		95A267CD2BC0C5C30047D2EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		95A267CF2BC0C5CD0047D2EB /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
+		95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
+		95A267D62BC0C6650047D2EB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.debug.xcconfig"; sourceTree = "<group>"; };
 		A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B94CB9000F1A40AE6A17BBB8 /* Pods-NotificationServiceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceSwift.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceSwift/Pods-NotificationServiceSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -147,7 +158,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A267D42BC0C5EF0047D2EB /* AppTrackingTransparency.framework in Frameworks */,
+				95A267D72BC0C6650047D2EB /* AdSupport.framework in Frameworks */,
+				95A267D52BC0C5FF0047D2EB /* AdServices.framework in Frameworks */,
 				A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */,
+				95A267D32BC0C5EB0047D2EB /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,6 +179,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */,
+				95A267D22BC0C5E40047D2EB /* AppTrackingTransparency.framework in Frameworks */,
+				95A267CE2BC0C5C30047D2EB /* StoreKit.framework in Frameworks */,
+				95A267D02BC0C5CD0047D2EB /* AdServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +229,10 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				95A267D62BC0C6650047D2EB /* AdSupport.framework */,
+				95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */,
+				95A267CF2BC0C5CD0047D2EB /* AdServices.framework */,
+				95A267CD2BC0C5C30047D2EB /* StoreKit.framework */,
 				112F10E8261B2A21005949B5 /* libPods-NotificationService.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */,
@@ -1015,6 +1037,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -1037,6 +1060,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -1078,6 +1102,10 @@
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					_LIBCPP_ENABLE_CXX17_REMOVED_UNARY_BINARY_FUNCTION,
+				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1097,6 +1125,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_CPLUSPLUSFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;

@@ -45,6 +45,19 @@ def shared_pods
 end
 
 post_install do |installer|
+  installer.pods_project.targets.each do |target|
+    if target.name == 'Flipper'
+      file_path = 'Pods/Flipper/xplat/Flipper/FlipperTransportTypes.h'
+      contents = File.read(file_path)
+      unless contents.include?('#include <functional>')
+        File.open(file_path, 'w') do |file|
+          file.puts('#include <functional>')
+          file.puts(contents)
+        end
+      end
+    end
+  end
+  
   react_native_post_install(
     installer,
     # Set `mac_catalyst_enabled` to `true` in order to apply patches
@@ -63,11 +76,11 @@ target 'EmmaReactNativeExampleSwift' do
 end
 
 target 'NotificationService' do
-  pod 'eMMa', '~> 4.12.2'
+  pod 'eMMa', '~> 4.13.1'
 end
 
 target 'NotificationServiceSwift' do
-  pod 'eMMa', '~> 4.12.2'
+  pod 'eMMa', '~> 4.13.1'
 end
 
 
