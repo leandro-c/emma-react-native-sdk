@@ -382,7 +382,6 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
         val orderId = if (startOrderMap.hasKey("orderId")) startOrderMap.getString("orderId") else ""
         val totalPrice = if(startOrderMap.hasKey("totalPrice")) startOrderMap.getDouble("totalPrice") else 0.0
         val customerId = if(startOrderMap.hasKey("customerId")) startOrderMap.getString("customerId") else null
-        val currencyCode = if(startOrderMap.hasKey("currencyCode")) startOrderMap.getString("currencyCode") else null
         val coupon = if(startOrderMap.hasKey("coupon")) startOrderMap.getString("coupon") else null
 
         if (!Utils.isValidField(orderId)) {
@@ -402,7 +401,7 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
 
         val extras = EmmaSerializer.orderExtrasMap(startOrderMap)
 
-        EMMA.getInstance().startOrder(orderId, customerId, totalPrice.toFloat(), currencyCode, coupon, extras)
+        EMMA.getInstance().startOrder(orderId, customerId, totalPrice.toFloat(), coupon, extras)
     }
 
     @ReactMethod

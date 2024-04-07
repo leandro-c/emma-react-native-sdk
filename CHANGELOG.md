@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.0
+
+- Added native version SDK 4.13 and iOS SDK Privacy Manifest and signature.
+
 ## 1.5.1
 
 - Fixed RN not processing Float values correctly, changed to Double.

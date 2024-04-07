@@ -292,7 +292,6 @@ public class EmmaReactNativeManager: NSObject {
         let orderId = orderMap["orderId"] as? String
         let totalPrice = orderMap["totalPrice"] as? Double
         let customerId = orderMap["customerId"] as? String
-        let currencyCode = orderMap["currencyCode"] as? String
         let coupon = orderMap["coupon"] as? String
         let extras = orderMap["extras"] as? Dictionary<String, String>
         
@@ -312,10 +311,6 @@ public class EmmaReactNativeManager: NSObject {
             let error = NSError(domain: Error.invalidCustomerId, code: 2, userInfo: nil)
             reject(String(error.code), error.domain, error)
             return
-        }
-        
-        if let currencyCode = currencyCode {
-            EMMA.setCurrencyCode(currencyCode: currencyCode)
         }
         
         EMMA.startOrder(orderId: orderId!, andCustomer: customerId!, withTotalPrice: Float(totalPrice!), withExtras: extras, assignCoupon: coupon)
