@@ -6,6 +6,10 @@
 
 // EMMA imports
 #import <React/RCTLinkingManager.h>
+
+// For static/dynamic frameworks
+// #import <emma_react_native_sdk/EmmaReactNative.h>
+
 #import <emma-react-native-sdk/EmmaReactNative.h>
 //
 
