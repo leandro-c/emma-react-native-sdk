@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.6.1
+
+- Added compatibility with use_frameworks active.
+
 ## 1.6.0
 
 - Added native version SDK 4.13 and iOS SDK Privacy Manifest and signature.

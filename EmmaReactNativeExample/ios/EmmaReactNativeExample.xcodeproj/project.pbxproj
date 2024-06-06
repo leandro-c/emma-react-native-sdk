@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		112F10E9261B2A21005949B5 /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 112F10E8261B2A21005949B5 /* libPods-NotificationService.a */; };
+		084625E43476B017D9B627BE /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C83E19F7E2B97B5806D95E9F /* libPods-NotificationService.a */; };
 		119361002613838A009D591A /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193CE8B26123DAB0069E33F /* NotificationService.swift */; };
 		1193611526138404009D591A /* NotificationServiceSwift.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 119361072613838A009D591A /* NotificationServiceSwift.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1193CE3E261236BB0069E33F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1193CDA7261232C90069E33F /* AppDelegate.swift */; };
@@ -18,9 +18,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		28D7DCD16F44507FEEE5B887 /* libPods-NotificationServiceSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F883C98C5CAA04DE8615781A /* libPods-NotificationServiceSwift.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */; };
+		959D43F02C11991A009E2B99 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 959D43EF2C11991A009E2B99 /* libPods-EmmaReactNativeExample.a */; };
+		959D43F22C119ACB009E2B99 /* libPods-EmmaReactNativeExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 959D43F12C119ACB009E2B99 /* libPods-EmmaReactNativeExample.a */; };
 		95A267CE2BC0C5C30047D2EB /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CD2BC0C5C30047D2EB /* StoreKit.framework */; };
 		95A267D02BC0C5CD0047D2EB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CF2BC0C5CD0047D2EB /* AdServices.framework */; };
 		95A267D22BC0C5E40047D2EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */; };
@@ -28,7 +28,8 @@
 		95A267D42BC0C5EF0047D2EB /* AppTrackingTransparency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */; };
 		95A267D52BC0C5FF0047D2EB /* AdServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267CF2BC0C5CD0047D2EB /* AdServices.framework */; };
 		95A267D72BC0C6650047D2EB /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95A267D62BC0C6650047D2EB /* AdSupport.framework */; };
-		A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */; };
+		ADC3A126D26D2E0588A55056 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDA36B1EF4DF3DF3650A302A /* libPods-EmmaReactNativeExampleSwift.a */; };
+		B3F3A1F7C0D166C151C4C2C6 /* libPods-NotificationServiceSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E5EA264FD4C4146CE97155 /* libPods-NotificationServiceSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -106,7 +107,6 @@
 /* Begin PBXFileReference section */
 		1126D7BE26145B5700599AB7 /* EmmaReactNativeExampleSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = EmmaReactNativeExampleSwift.entitlements; sourceTree = "<group>"; };
 		1126D7E22614D20100599AB7 /* EmmaReactNativeExample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = EmmaReactNativeExample.entitlements; path = EmmaReactNativeExample/EmmaReactNativeExample.entitlements; sourceTree = "<group>"; };
-		112F10E8261B2A21005949B5 /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		119361072613838A009D591A /* NotificationServiceSwift.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceSwift.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		119361082613838B009D591A /* Info-swift.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-swift.plist"; path = "/Users/adriancarrera/Documents/devel/emma-react-native-sdk/EmmaReactNativeExample/ios/Info-swift.plist"; sourceTree = "<absolute>"; };
 		1193618F2613891C009D591A /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
@@ -126,23 +126,27 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = EmmaReactNativeExample/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = EmmaReactNativeExample/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = EmmaReactNativeExample/main.m; sourceTree = "<group>"; };
-		6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.release.xcconfig"; sourceTree = "<group>"; };
+		1E069C078555A485C3D61D90 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		4245B7069840B4C2148835ED /* Pods-EmmaReactNativeExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.release.xcconfig"; sourceTree = "<group>"; };
+		42E5EA264FD4C4146CE97155 /* libPods-NotificationServiceSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationServiceSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61ECA9C43C6AA41F3EBDBCD6 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D713AD50303B01CBAFE817B /* Pods-NotificationServiceSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceSwift.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceSwift/Pods-NotificationServiceSwift.release.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = EmmaReactNativeExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		959D43ED2C1198F5009E2B99 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		959D43EF2C11991A009E2B99 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		959D43F12C119ACB009E2B99 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		95A267CD2BC0C5C30047D2EB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		95A267CF2BC0C5CD0047D2EB /* AdServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdServices.framework; path = System/Library/Frameworks/AdServices.framework; sourceTree = SDKROOT; };
 		95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
 		95A267D62BC0C6650047D2EB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.debug.xcconfig"; sourceTree = "<group>"; };
-		A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		B94CB9000F1A40AE6A17BBB8 /* Pods-NotificationServiceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceSwift.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceSwift/Pods-NotificationServiceSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		BE70519DF4B0D82C8D95A5D2 /* Pods-NotificationServiceSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceSwift.release.xcconfig"; path = "Target Support Files/Pods-NotificationServiceSwift/Pods-NotificationServiceSwift.release.xcconfig"; sourceTree = "<group>"; };
-		CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
+		97D272AE321EBEFE170C49B4 /* Pods-NotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.debug.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		B5AABAB835851A3B5FE566BA /* Pods-EmmaReactNativeExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExample.debug.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample.debug.xcconfig"; sourceTree = "<group>"; };
+		C5E0EBA4D8567F2D4F81B8F5 /* Pods-NotificationServiceSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceSwift.debug.xcconfig"; path = "Target Support Files/Pods-NotificationServiceSwift/Pods-NotificationServiceSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		C83E19F7E2B97B5806D95E9F /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3333432C69FB9855118C92A /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationService.release.xcconfig"; path = "Target Support Files/Pods-NotificationService/Pods-NotificationService.release.xcconfig"; sourceTree = "<group>"; };
-		F883C98C5CAA04DE8615781A /* libPods-NotificationServiceSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationServiceSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA36B1EF4DF3DF3650A302A /* libPods-EmmaReactNativeExampleSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EmmaReactNativeExampleSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0094ECF8A5F037442AE5A6 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmmaReactNativeExampleSwift.release.xcconfig"; path = "Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +154,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28D7DCD16F44507FEEE5B887 /* libPods-NotificationServiceSwift.a in Frameworks */,
+				B3F3A1F7C0D166C151C4C2C6 /* libPods-NotificationServiceSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -161,8 +165,8 @@
 				95A267D42BC0C5EF0047D2EB /* AppTrackingTransparency.framework in Frameworks */,
 				95A267D72BC0C6650047D2EB /* AdSupport.framework in Frameworks */,
 				95A267D52BC0C5FF0047D2EB /* AdServices.framework in Frameworks */,
-				A1DD64140EC361105F2E9499 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */,
 				95A267D32BC0C5EB0047D2EB /* StoreKit.framework in Frameworks */,
+				ADC3A126D26D2E0588A55056 /* libPods-EmmaReactNativeExampleSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +174,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				112F10E9261B2A21005949B5 /* libPods-NotificationService.a in Frameworks */,
+				084625E43476B017D9B627BE /* libPods-NotificationService.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +182,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88D8D796010F7A26CE0D3926 /* libPods-EmmaReactNativeExample.a in Frameworks */,
 				95A267D22BC0C5E40047D2EB /* AppTrackingTransparency.framework in Frameworks */,
+				959D43F22C119ACB009E2B99 /* libPods-EmmaReactNativeExample.a in Frameworks */,
 				95A267CE2BC0C5C30047D2EB /* StoreKit.framework in Frameworks */,
+				959D43F02C11991A009E2B99 /* libPods-EmmaReactNativeExample.a in Frameworks */,
 				95A267D02BC0C5CD0047D2EB /* AdServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -229,15 +234,18 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				959D43F12C119ACB009E2B99 /* libPods-EmmaReactNativeExample.a */,
+				959D43EF2C11991A009E2B99 /* libPods-EmmaReactNativeExample.a */,
+				959D43ED2C1198F5009E2B99 /* libPods-EmmaReactNativeExample.a */,
 				95A267D62BC0C6650047D2EB /* AdSupport.framework */,
 				95A267D12BC0C5E40047D2EB /* AppTrackingTransparency.framework */,
 				95A267CF2BC0C5CD0047D2EB /* AdServices.framework */,
 				95A267CD2BC0C5C30047D2EB /* StoreKit.framework */,
-				112F10E8261B2A21005949B5 /* libPods-NotificationService.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				FF91620700CEBB4D7F78A382 /* libPods-EmmaReactNativeExample.a */,
-				8CD59407BBB83A938348AB69 /* libPods-EmmaReactNativeExampleSwift.a */,
-				F883C98C5CAA04DE8615781A /* libPods-NotificationServiceSwift.a */,
+				61ECA9C43C6AA41F3EBDBCD6 /* libPods-EmmaReactNativeExample.a */,
+				FDA36B1EF4DF3DF3650A302A /* libPods-EmmaReactNativeExampleSwift.a */,
+				C83E19F7E2B97B5806D95E9F /* libPods-NotificationService.a */,
+				42E5EA264FD4C4146CE97155 /* libPods-NotificationServiceSwift.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -280,14 +288,14 @@
 		94E7A2A7015DEDEA4180351A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */,
-				6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */,
-				A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */,
-				CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */,
-				94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */,
-				ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */,
-				B94CB9000F1A40AE6A17BBB8 /* Pods-NotificationServiceSwift.debug.xcconfig */,
-				BE70519DF4B0D82C8D95A5D2 /* Pods-NotificationServiceSwift.release.xcconfig */,
+				B5AABAB835851A3B5FE566BA /* Pods-EmmaReactNativeExample.debug.xcconfig */,
+				4245B7069840B4C2148835ED /* Pods-EmmaReactNativeExample.release.xcconfig */,
+				1E069C078555A485C3D61D90 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */,
+				FE0094ECF8A5F037442AE5A6 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */,
+				97D272AE321EBEFE170C49B4 /* Pods-NotificationService.debug.xcconfig */,
+				E3333432C69FB9855118C92A /* Pods-NotificationService.release.xcconfig */,
+				C5E0EBA4D8567F2D4F81B8F5 /* Pods-NotificationServiceSwift.debug.xcconfig */,
+				6D713AD50303B01CBAFE817B /* Pods-NotificationServiceSwift.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -299,7 +307,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 119361042613838A009D591A /* Build configuration list for PBXNativeTarget "NotificationServiceSwift" */;
 			buildPhases = (
-				119360FE2613838A009D591A /* [CP] Check Pods Manifest.lock */,
+				182BE00F67B775B05CA7B2EF /* [CP] Check Pods Manifest.lock */,
 				119360FF2613838A009D591A /* Sources */,
 				119361012613838A009D591A /* Frameworks */,
 				119361032613838A009D591A /* Resources */,
@@ -317,16 +325,16 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1193CE35261236990069E33F /* Build configuration list for PBXNativeTarget "EmmaReactNativeExampleSwift" */;
 			buildPhases = (
-				0E9BC3124C312DD5708FD5EE /* [CP] Check Pods Manifest.lock */,
+				57E3C21F5C0E3554C4E3102C /* [CP] Check Pods Manifest.lock */,
 				1193CE29261236990069E33F /* Start Packager */,
 				1193CE2A261236990069E33F /* Sources */,
 				1193CE2D261236990069E33F /* Frameworks */,
 				1193CE2F261236990069E33F /* Resources */,
 				1193CE32261236990069E33F /* Bundle React Native code and images */,
-				D3DC0F191B8457F8834387FC /* [CP] Embed Pods Frameworks */,
-				5F6ECF3D0BF2459851C11776 /* [CP] Copy Pods Resources */,
 				1193611826138404009D591A /* Embed App Extensions */,
 				9549D61D2A965FB900F8231A /* CopyFiles */,
+				8E94C7BE5CD6D332BBA2AFFC /* [CP] Embed Pods Frameworks */,
+				67DB9E37102E0364030CA348 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,7 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1193CE9426123DAB0069E33F /* Build configuration list for PBXNativeTarget "NotificationService" */;
 			buildPhases = (
-				77F091C4BB17382A7AFDC8BB /* [CP] Check Pods Manifest.lock */,
+				10C3D7AF0328C4C19D67F91C /* [CP] Check Pods Manifest.lock */,
 				1193CE8526123DAB0069E33F /* Sources */,
 				1193CE8626123DAB0069E33F /* Frameworks */,
 				1193CE8726123DAB0069E33F /* Resources */,
@@ -360,15 +368,15 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "EmmaReactNativeExample" */;
 			buildPhases = (
-				F7EE4EEBA2E6C339A6F66135 /* [CP] Check Pods Manifest.lock */,
+				3A1B977167306825C9CF7514 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				1193CE9126123DAB0069E33F /* Embed App Extensions */,
-				66D3D871622D2390F0F5ABA7 /* [CP] Embed Pods Frameworks */,
-				D089F8B5B78631AD4151BA0A /* [CP] Copy Pods Resources */,
+				061968FDA9628A53A8F2FA79 /* [CP] Embed Pods Frameworks */,
+				726E98FA47352B9457EFB658 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 				1126D7F72614D2CC00599AB7 /* PBXBuildRule */,
@@ -470,29 +478,24 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		0E9BC3124C312DD5708FD5EE /* [CP] Check Pods Manifest.lock */ = {
+		061968FDA9628A53A8F2FA79 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EmmaReactNativeExampleSwift-checkManifestLockResult.txt",
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		119360FE2613838A009D591A /* [CP] Check Pods Manifest.lock */ = {
+		10C3D7AF0328C4C19D67F91C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -507,7 +510,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceSwift-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -547,41 +550,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n\n";
 		};
-		5F6ECF3D0BF2459851C11776 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		66D3D871622D2390F0F5ABA7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		77F091C4BB17382A7AFDC8BB /* [CP] Check Pods Manifest.lock */ = {
+		182BE00F67B775B05CA7B2EF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,48 +565,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NotificationService-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-NotificationServiceSwift-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D089F8B5B78631AD4151BA0A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D3DC0F191B8457F8834387FC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F7EE4EEBA2E6C339A6F66135 /* [CP] Check Pods Manifest.lock */ = {
+		3A1B977167306825C9CF7514 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -657,6 +592,79 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57E3C21F5C0E3554C4E3102C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmmaReactNativeExampleSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67DB9E37102E0364030CA348 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		726E98FA47352B9457EFB658 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExample/Pods-EmmaReactNativeExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E94C7BE5CD6D332BBA2AFFC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmmaReactNativeExampleSwift/Pods-EmmaReactNativeExampleSwift-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -737,7 +745,7 @@
 /* Begin XCBuildConfiguration section */
 		119361052613838A009D591A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B94CB9000F1A40AE6A17BBB8 /* Pods-NotificationServiceSwift.debug.xcconfig */;
+			baseConfigurationReference = C5E0EBA4D8567F2D4F81B8F5 /* Pods-NotificationServiceSwift.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -771,7 +779,7 @@
 		};
 		119361062613838A009D591A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE70519DF4B0D82C8D95A5D2 /* Pods-NotificationServiceSwift.release.xcconfig */;
+			baseConfigurationReference = 6D713AD50303B01CBAFE817B /* Pods-NotificationServiceSwift.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -805,7 +813,7 @@
 		};
 		1193CE36261236990069E33F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A47155DD398984405ECD7A08 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */;
+			baseConfigurationReference = 1E069C078555A485C3D61D90 /* Pods-EmmaReactNativeExampleSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -837,7 +845,7 @@
 		};
 		1193CE37261236990069E33F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CFC2ABFFE500A54F34ECFDF8 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */;
+			baseConfigurationReference = FE0094ECF8A5F037442AE5A6 /* Pods-EmmaReactNativeExampleSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -865,7 +873,7 @@
 		};
 		1193CE9226123DAB0069E33F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94C52172409BA2F016FE58CA /* Pods-NotificationService.debug.xcconfig */;
+			baseConfigurationReference = 97D272AE321EBEFE170C49B4 /* Pods-NotificationService.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -899,7 +907,7 @@
 		};
 		1193CE9326123DAB0069E33F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED89D4562ECE304B34BC35FA /* Pods-NotificationService.release.xcconfig */;
+			baseConfigurationReference = E3333432C69FB9855118C92A /* Pods-NotificationService.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -933,9 +941,9 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A107B023B15A466DABAD5B1A /* Pods-EmmaReactNativeExample.debug.xcconfig */;
+			baseConfigurationReference = B5AABAB835851A3B5FE566BA /* Pods-EmmaReactNativeExample.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExample/EmmaReactNativeExample.entitlements;
@@ -967,9 +975,9 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C2D22AC4F619A4A27347E60 /* Pods-EmmaReactNativeExample.release.xcconfig */;
+			baseConfigurationReference = 4245B7069840B4C2148835ED /* Pods-EmmaReactNativeExample.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = EmmaReactNativeExample/EmmaReactNativeExample.entitlements;

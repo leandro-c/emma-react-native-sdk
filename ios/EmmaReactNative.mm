@@ -4,7 +4,11 @@
 #import <UserNotifications/UserNotifications.h>
 
 
+#if __has_include(<emma_react_native_sdk/emma_react_native_sdk-Swift.h>)
+#import <emma_react_native_sdk/emma_react_native_sdk-Swift.h>
+#else
 #import "emma_react_native_sdk-Swift.h"
+#endif
 
 
 @implementation EmmaReactNative
