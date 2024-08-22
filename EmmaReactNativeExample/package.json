@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@react-native/metro-config": "^0.72.12",
-    "emma-react-native-sdk": "1.6.1",
+    "emma-react-native-sdk": "^1.7.0",
     "react": "18.2.0",
     "react-native": "0.73.5"
   },

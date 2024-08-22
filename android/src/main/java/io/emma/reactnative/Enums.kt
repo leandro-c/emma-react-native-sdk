@@ -7,7 +7,7 @@ enum class DefaultEvent {
 
 enum class InAppAction {
     Click,
-    Impression
+    Impression,
     DismissedClick
 }
 

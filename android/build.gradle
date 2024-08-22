@@ -36,6 +36,9 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    
+    namespace "io.emma.reactnative"
+    
     lintOptions {
         abortOnError false
     }

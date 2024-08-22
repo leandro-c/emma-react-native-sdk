@@ -256,7 +256,7 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     }
 
     @ReactMethod
-    fun sendInAppClick(params: ReadableMap, promise: Promise) {
+    fun sendInAppDismissedClick(params: ReadableMap, promise: Promise) {
         processInAppAction(params, InAppAction.DismissedClick, promise)
     }
 
