@@ -93,6 +93,10 @@ RCT_EXPORT_METHOD(sendInAppClick:(NSDictionary*) params resolver:(RCTPromiseReso
     [EmmaReactNativeManager sendInAppClick:params resolver:resolve rejecter:reject];
 }
 
+RCT_EXPORT_METHOD(sendInAppDismissedClick:(NSDictionary*) params resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+    [EmmaReactNativeManager sendInAppDismissedClick:params resolver:resolve rejecter:reject];
+}
+
 RCT_EXPORT_METHOD(openNativeAd:(NSDictionary*) params resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     [EmmaReactNativeManager openNativeAd:params resolver:resolve rejecter:reject];
 }

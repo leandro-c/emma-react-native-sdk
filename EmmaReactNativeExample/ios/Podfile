@@ -1,7 +1,7 @@
 require_relative '../node_modules/react-native/scripts/react_native_pods'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-platform :ios, 12.4
+platform :ios, 14.0
 prepare_react_native_project!
 
 # If you are using a `react-native-flipper` your iOS build will fail when `NO_FLIPPER=1` is set.
@@ -66,7 +66,6 @@ post_install do |installer|
     # necessary for Mac Catalyst builds
     :mac_catalyst_enabled => false
   )
-  __apply_Xcode_12_5_M1_post_install_workaround(installer)
 end
 
 target 'EmmaReactNativeExample' do
@@ -78,11 +77,11 @@ target 'EmmaReactNativeExampleSwift' do
 end
 
 target 'NotificationService' do
-  pod 'eMMa', '~> 4.13.1'
+  pod 'eMMa', '~> 4.14.0'
 end
 
 target 'NotificationServiceSwift' do
-  pod 'eMMa', '~> 4.13.1'
+  pod 'eMMa', '~> 4.14.0'
 end
 
 

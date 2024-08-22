@@ -3,6 +3,7 @@ import EMMA_iOS
 enum InAppAction {
     case click
     case impression
+    case dismissedClick
 }
 
 enum DefaultEvent {
@@ -195,8 +196,10 @@ public class EmmaReactNativeManager: NSObject {
         
         if (inappAction == .impression) {
             EMMA.sendImpression(campaignType: requestType, withId: String(campaignId))
-        } else {
+        } else if (inappAction == .click) {
             EMMA.sendClick(campaignType: requestType, withId: String(campaignId))
+        } else {
+            EMMA.sendDismissedClick(campaignType: requestType, withId: String(campaignId))
         }
         
         resolve(nil)
@@ -216,6 +219,14 @@ public class EmmaReactNativeManager: NSObject {
                         rejecter reject: RCTPromiseRejectBlock) {
         
         processInAppAction(params, inappAction: .click, resolver: resolve, rejecter: reject)
+    }
+    
+    @objc
+    public class func sendInAppDismissedClick(_ params: [String : Any],
+                        resolver resolve: RCTPromiseResolveBlock,
+                        rejecter reject: RCTPromiseRejectBlock) {
+        
+        processInAppAction(params, inappAction: .dismissedClick, resolver: resolve, rejecter: reject)
     }
     
     @objc

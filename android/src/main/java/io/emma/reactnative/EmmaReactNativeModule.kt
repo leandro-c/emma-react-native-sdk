@@ -236,21 +236,28 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
 
         val campaign = EMMANativeAd()
         campaign.campaignID = campaignId
-        if (actionType == InAppAction.Click) {
+        if (actionType == InAppAction.Impression) {
+            EMMA.getInstance().sendInAppImpression(numericType, campaign)
+        } else if (actionType == InAppAction.Click) {   
             EMMA.getInstance().sendInAppClick(numericType, campaign)
         } else {
-            EMMA.getInstance().sendInAppImpression(numericType, campaign)
+            EMMA.getInstance().sendInAppDismissedClick(numericType, campaign)
         }
     }
 
-   @ReactMethod
-   fun sendInAppImpression(params: ReadableMap, promise: Promise) {
-       processInAppAction(params, InAppAction.Impression, promise)
-   }
+    @ReactMethod
+    fun sendInAppImpression(params: ReadableMap, promise: Promise) {
+        processInAppAction(params, InAppAction.Impression, promise)
+    }
 
     @ReactMethod
     fun sendInAppClick(params: ReadableMap, promise: Promise) {
         processInAppAction(params, InAppAction.Click, promise)
+    }
+
+    @ReactMethod
+    fun sendInAppClick(params: ReadableMap, promise: Promise) {
+        processInAppAction(params, InAppAction.DismissedClick, promise)
     }
 
     @ReactMethod

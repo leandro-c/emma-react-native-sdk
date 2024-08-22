@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.7.0
+
+- Added new method sendInAppDismissedClick
+- Updated project to support AGP 8
+- Updated SDK native to 4.14
+- Updated target to Android 34
+
 ## 1.6.1
 
 - Added compatibility with use_frameworks active.

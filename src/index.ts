@@ -82,6 +82,9 @@ export default class EmmaSdk {
   static sendInAppClick(sendInAppParams: SendInAppParams): void {
     EmmaReactNative.sendInAppClick(sendInAppParams);
   }
+  static sendInAppDismissedClick(sendInAppParams: SendInAppParams): void {
+    EmmaReactNative.sendInAppDismissedClick(sendInAppParams);
+  }
   static openNativeAd(openNativeParams: OpenNativeAdParams): void {
     EmmaReactNative.openNativeAd(openNativeParams);
   }

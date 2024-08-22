@@ -8,6 +8,7 @@ enum class DefaultEvent {
 enum class InAppAction {
     Click,
     Impression
+    DismissedClick
 }
 
 enum class PermissionStatus {

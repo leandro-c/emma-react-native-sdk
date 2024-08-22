@@ -20,6 +20,7 @@ export default class EmmaSdk {
     static setCustomerId(customerId: string): void;
     static sendInAppImpression(sendInAppParams: SendInAppParams): void;
     static sendInAppClick(sendInAppParams: SendInAppParams): void;
+    static sendInAppDismissedClick(sendInAppParams: SendInAppParams): void;
     static openNativeAd(openNativeParams: OpenNativeAdParams): void;
     static requestTrackingWithIdfa(): void;
     static areNotificationsEnabled(): Promise<boolean>;
