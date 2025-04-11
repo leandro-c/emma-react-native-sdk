@@ -78,6 +78,22 @@ public class EmmaReactNativeManager: NSObject {
         EMMA.setCustomerId(customerId: customerId)
         resolve(nil)
     }
+
+    //MARK: Language
+    @objc
+    public class func setUserLanguage(_ language: String,
+                       resolver resolve: RCTPromiseResolveBlock,
+                       rejecter reject: RCTPromiseRejectBlock) {
+        
+        guard Utils.isValidField(language) else {
+            let error = NSError(domain: Error.invalidToken, code: 0, userInfo: nil)
+            reject(String(error.code), error.domain, error)
+            return
+        }
+        
+        EMMA.setUserLanguage(language)
+        resolve(nil)
+    }
     
     //MARK: Events
     @objc

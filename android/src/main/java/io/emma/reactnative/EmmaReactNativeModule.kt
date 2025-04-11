@@ -451,6 +451,12 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     }
 
     @ReactMethod
+    fun setUserLanguage(language: String, promise: Promise) {
+        EMMA.getInstance().setUserLanguage(language);
+        promise.resolve(null)
+    }
+
+    @ReactMethod
     fun areNotificationsEnabled(promise: Promise) {
         promise.resolve(EMMA.getInstance().areNotificationsEnabled())
     }
