@@ -20,7 +20,7 @@ public class EmmaReactNativeManager: NSObject {
         return false
     }
 
-    //MARK: Start session and basics
+    // MARK: - Start session and basics
     @objc
     public class func startSession(_ configurationMap: [String : Any],
                       resolver resolve: RCTPromiseResolveBlock,
@@ -48,7 +48,7 @@ public class EmmaReactNativeManager: NSObject {
         resolve(nil)
     }
     
-    //MARK: Track user info
+    // MARK: - Track user info
     @objc
     public class func trackUserExtraInfo(_ infoMap: [String : Any],
                             resolver resolve: RCTPromiseResolveBlock,
@@ -79,14 +79,14 @@ public class EmmaReactNativeManager: NSObject {
         resolve(nil)
     }
 
-    //MARK: Language
+    // MARK: - Language
     @objc
     public class func setUserLanguage(_ language: String,
                        resolver resolve: RCTPromiseResolveBlock,
                        rejecter reject: RCTPromiseRejectBlock) {
         
         guard Utils.isValidField(language) else {
-            let error = NSError(domain: Error.invalidToken, code: 0, userInfo: nil)
+            let error = NSError(domain: Error.invalidLanguage, code: 0, userInfo: nil)
             reject(String(error.code), error.domain, error)
             return
         }
@@ -95,7 +95,7 @@ public class EmmaReactNativeManager: NSObject {
         resolve(nil)
     }
     
-    //MARK: Events
+    // MARK: - Events
     @objc
     public class func trackEvent(_ requestMap: [String : Any],
                     resolver resolve: RCTPromiseResolveBlock,
@@ -155,7 +155,7 @@ public class EmmaReactNativeManager: NSObject {
         processLoginRegister(registerMap, type: .register, resolver: resolve, rejecter: reject)
     }
     
-    //MARK: Inapp messaging methods
+    // MARK: - Inapp messaging methods
     @objc
     public class func inAppMessage(_ messageMap: [String: Any],
                                    resolve: @escaping (Any?) -> Void, reject: @escaping (String, String, NSError?) -> Void ) {
@@ -263,8 +263,8 @@ public class EmmaReactNativeManager: NSObject {
         resolve(nil)
     }
     
-    //MARK: Push methods
-    //Push params only for Android
+    // MARK: - Push methods
+    // Push params only for Android
     @objc
     public class func startPush(_ pushParams: NSDictionary,
                    resolver resolve: RCTPromiseResolveBlock,
@@ -289,7 +289,7 @@ public class EmmaReactNativeManager: NSObject {
         resolve(nil)
     }
     
-    //MARK: GDPR
+    // MARK: - GDPR
     @objc
     public class func isUserTrackingEnabled(_ resolve: RCTPromiseResolveBlock,
                                rejecter reject: RCTPromiseRejectBlock) {
