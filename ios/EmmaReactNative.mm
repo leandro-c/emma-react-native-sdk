@@ -76,6 +76,11 @@ RCT_EXPORT_METHOD(setCustomerId:(NSString*) customerId resolver:(RCTPromiseResol
     [EmmaReactNativeManager setCustomerId:customerId resolver:resolve rejecter:reject];
 }
 
+//MARK: Language
+RCT_EXPORT_METHOD(setUserLanguage:(NSString*) language resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+    [EmmaReactNativeManager setUserLanguage:language resolver:resolve rejecter:reject];
+}
+
 //MARK: In-App messaging
 RCT_EXPORT_METHOD(inAppMessage:(NSDictionary*) messageMap resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
     [EmmaReactNativeManager inAppMessage:messageMap resolve:^(id result){

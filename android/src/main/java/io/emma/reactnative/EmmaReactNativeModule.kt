@@ -451,6 +451,17 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
     }
 
     @ReactMethod
+    fun setUserLanguage(language: String, promise: Promise) {
+        if (!Utils.isValidField(language)) {
+            promise.reject("0", Error.INVALID_LANGUAGE)
+            return
+        }
+
+        EMMA.getInstance().setUserLanguage(language);
+        promise.resolve(null)
+    }
+
+    @ReactMethod
     fun areNotificationsEnabled(promise: Promise) {
         promise.resolve(EMMA.getInstance().areNotificationsEnabled())
     }

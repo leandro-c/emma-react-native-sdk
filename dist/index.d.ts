@@ -18,6 +18,7 @@ export default class EmmaSdk {
     static isUserTrackingEnabled(): Promise<boolean>;
     static sendPushToken(token: string): void;
     static setCustomerId(customerId: string): void;
+    static setUserLanguage(language: string): void;
     static sendInAppImpression(sendInAppParams: SendInAppParams): void;
     static sendInAppClick(sendInAppParams: SendInAppParams): void;
     static sendInAppDismissedClick(sendInAppParams: SendInAppParams): void;

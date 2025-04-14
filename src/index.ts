@@ -76,6 +76,9 @@ export default class EmmaSdk {
   static setCustomerId(customerId: string): void {
     EmmaReactNative.setCustomerId(customerId);
   }
+  static setUserLanguage(language: string): void {
+    EmmaReactNative.setUserLanguage(language);
+  }
   static sendInAppImpression(sendInAppParams: SendInAppParams): void {
     EmmaReactNative.sendInAppImpression(sendInAppParams);
   }

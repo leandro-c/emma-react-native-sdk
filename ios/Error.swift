@@ -20,6 +20,7 @@ struct Error {
     static let invalidTotalPrice = "Order totalPrice is mandatory"
     static let invalidProductId = "Product ID cannot be empty"
     static let invalidCustomerId = "Customer ID cannot be empty"
+    static let invalidLanguage = "Language not found or empty"
     static let invalidConversionValue = "Invalid conversionValue for SKAdNetwork. Integer must be between 1 and 63"
     static let invalidCoarseValue = "Invalid coarseValue for SKAdNetwork. Valid values are high, medium and low"
 }
