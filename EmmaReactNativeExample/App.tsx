@@ -16,6 +16,7 @@ import {
   View,
   useColorScheme,
 } from 'react-native';
+import { Picker } from '@react-native-picker/picker';
 
 import Button from './components/Button';
 import Colors from './components/Colors';
@@ -57,6 +58,7 @@ const App = () => {
   const [hasOrder, setHasOrder] = useState<boolean>(false);
   const [hasProducts, setHasProducts] = useState<boolean>(false);
   const [trackedOrder, setTrackedOrder] = useState<boolean>(false);
+  const [selectedLanguage, setSelectedLanguage] = useState('Spanish');
 
   // Tweak colors
   const isDarkMode = useColorScheme() === 'dark';
@@ -150,6 +152,25 @@ const App = () => {
     } catch (err) {
       console.error('InApp message error', err);
     }
+  };
+
+  const handleSetLanguage = () => {
+    let code = 'es';
+    switch (selectedLanguage) {
+      case 'English':
+        code = 'en';
+        break;
+      case 'French':
+        code = 'fr';
+        break;
+      case 'German':
+        code = 'de';
+        break;
+      default:
+        code = 'es';
+    }
+    console.log('Language selected:', code);
+    EmmaSdk.setUserLanguage(code);
   };
 
   // Listen to deeplink requests
@@ -311,6 +332,22 @@ const App = () => {
               </View>
             </View>
           )}
+          <View>
+            <Section title="Language">
+              Change the language to receive notifications, communications and more in this language.
+            </Section>
+            <Picker
+              selectedValue={selectedLanguage}
+              onValueChange={(itemValue) => setSelectedLanguage(itemValue)}
+              style={styles.picker}
+            >
+              <Picker.Item label="Spanish" value="Spanish" />
+              <Picker.Item label="English" value="English" />
+              <Picker.Item label="French" value="French" />
+              <Picker.Item label="German" value="German" />
+            </Picker>
+            <Button title="Set language" onPress={handleSetLanguage} />
+          </View>
           <Section title="Learn More">Read the docs to discover what to do next:</Section>
           <LearnMoreLinks />
         </View>
@@ -341,6 +378,9 @@ const getStyles = (isDarkMode: boolean) =>
     },
     button: {
       color: isDarkMode ? Colors.primaryBright : Colors.primary,
+    },
+    picker: {
+      width: '100%',
     },
   });
 
