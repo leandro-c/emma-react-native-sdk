@@ -49,9 +49,9 @@ class EmmaReactNativeModule(reactContext: ReactApplicationContext) :
             return
         }
 
-        EMMA.getInstance().startSession(configuration) {
-            promise.resolve(null)
-        }
+        // Start session synchronously like iOS implementation
+        EMMA.getInstance().startSession(configuration)
+        promise.resolve(null)
     }
 
     @ReactMethod
